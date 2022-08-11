@@ -120,6 +120,10 @@
   margin-top: 8px !important;
 }
 
+.VPHero .image-bg {
+  opacity: 0.5;
+}
+
 .VPHomeSponsors .message {
   max-width: 768px;
 }

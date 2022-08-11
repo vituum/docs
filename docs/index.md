@@ -9,7 +9,7 @@ hero:
   text: Is Vite with predefined config and set of plugins
   tagline: Fast prototyping with template engines and integrated frontend tools
   image:
-    src: /logo-with-shadow.png
+    src: /logo.svg
     alt: Vituum
   actions:
     - theme: brand
