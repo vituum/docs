@@ -1,4 +1,4 @@
-import { defineConfig, DefaultTheme } from 'vitepress'
+import { defineConfig } from 'vitepress'
 
 const ogDescription = 'Fast prototyping with template engines and integrated frontend tools'
 const ogImage = 'https://vituum.dev/og-image.png'
@@ -7,7 +7,7 @@ const ogUrl = 'https://vituum.dev'
 
 export default defineConfig({
   title: `Vituum`,
-  description: 'Next Generation Frontend Tooling',
+  description: 'Fast prototyping with template engines and integrated frontend tools',
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
@@ -38,9 +38,9 @@ export default defineConfig({
     ],
 
     algolia: {
-      appId: '7H67QR5P0A',
-      apiKey: 'deaab78bcdfe96b599497d25acc6460e',
-      indexName: 'vitejs',
+      appId: '',
+      apiKey: '',
+      indexName: 'vituum',
       searchParameters: {
         facetFilters: ['tags:en']
       }
