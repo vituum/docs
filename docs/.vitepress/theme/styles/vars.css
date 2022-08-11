@@ -127,3 +127,9 @@
 .VPHomeSponsors .message {
   max-width: 768px;
 }
+
+@media (min-width: 768px) {
+  .vp-sponsor-grid.big .vp-sponsor-grid-image [src*="newlogic.svg"] {
+    transform: scale(2);
+  }
+}
