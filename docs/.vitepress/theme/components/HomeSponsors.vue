@@ -8,9 +8,9 @@ const { data } = useSponsor()
 <template>
   <VPHomeSponsors
     v-if="data"
-    message="Vituum is free and open source. Mainly maintained by Newlogic Digital. Please consider sponsoring us, if you like what Vituum tries to do and want to support the development."
+    message="Vituum is free and open source. If you like what Vituum tries to do and want to support the development. Please consider sponsoring us."
     action-text="Become a sponsor"
-    action-link="mailto:info@newlogic.cz"
+    action-link="mailto:lubomir.blazek@newlogic.cz"
     :data="data"
   />
 </template>

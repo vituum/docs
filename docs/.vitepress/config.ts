@@ -48,7 +48,7 @@ export default defineConfig({
 
     footer: {
       message: `Released under the MIT License.`,
-      copyright: 'Copyright © 2022-present Newlogic Digital & Vituum Contributors'
+      copyright: 'Copyright © 2022-present lubomirblazek.cz, newlogic.cz & Vituum Contributors'
     },
 
     nav: [

@@ -25,20 +25,20 @@ hero:
 features:
   - icon: ⚡️
     title: Vite integrated
-    details: 
+    details: Blazing fast and next generation frontend tooling. Vituum is wrapper around Vite.
   - icon: 🚀️️
     title: Fast prototyping
-    details: 
+    details: Vituum has multi-page support, so you can prototype fast with various templates.
   - icon: 🛠️
     title: Integrated tools and plugins
-    details: 
+    details: All modern frontend features cooked-in on top of Vite, out of the box and ready to go.
   - icon: 💡
     title: Template engines
-    details: 
+    details: They are great for preparing website templates fast for various backend integrations.
   - icon: 📦
     title: Modular structure
-    details: Pre-defined structure for your project files.
+    details: Pre-defined opinionated structure for your project files.
   - icon: ✉️ 
     title: Email templates
-    details:
+    details: Writing email templates was always tricky. Vituum tries to make it easier for you.
 ---
