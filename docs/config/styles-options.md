@@ -2,10 +2,10 @@
 
 ## styles.tailwindcss
 
-- **Type:** `boolean`
-- **Default:** `false`
+- **Type:** `object`
+- **Default:** `{}`
 
-Whenever to use tailwind css or not
+Inline TailwindCSS config
 
 ## styles.postcss
 

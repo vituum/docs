@@ -7,6 +7,8 @@
 
 Project files for build synced with `FastGlob`, in Vite it's `build.rollupOptions.input`
 
+Change this to `['index.html']` if you are planning to use Vituum for a SPA app.
+
 See [Vite rollupOptions](https://vitejs.dev/config/build-options.html#build-rollupoptions) for more details.
 
 ## output
@@ -68,11 +70,17 @@ You can use [mkcert](https://github.com/FiloSottile/mkcert) to easily generate a
 
 Certificate filename to use with `server.https`
 
+## server.reload
+
+- **Type:** `function`
+- **Default:** `null`
+
+You can add a custom filename filter to perform a full page refresh while you are running `vite dev` on any file you filter in the function
+
 ## imports.paths
 
 - **Type:** `string[]`
 - **Default:** `['./src/styles/**', './src/scripts/**']`
-
 
 
 ## imports.extnamePattern.styles
@@ -99,8 +107,3 @@ Certificate filename to use with `server.https`
 
 - **Type:** `string[]`
 - **Default:** `['emails']`
-
-## middleware.contentTypeJson
-
-- **Type:** `string[]`
-- **Default:** `['views/dialog']`
