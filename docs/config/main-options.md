@@ -1,15 +1,15 @@
 # Main Options
 
+These are the main **Vituum** options that can be used. If you want to add vite options, do so inside the `vite` option - any option here overrides **Vituum** options.
+
 ## input
 
 - **Type:** `string[]`
 - **Default:** `['./src/views/**/*.html', './src/emails/*.html', './src/styles/*.css', './src/scripts/*.js']`
 
-Project files for build synced with `FastGlob`, in Vite it's `build.rollupOptions.input`
+Project files for build synced with `FastGlob` that are included in Vite as `build.rollupOptions.input`
 
-Change this to `['index.html']` if you are planning to use Vituum for a SPA app.
-
-See [Vite rollupOptions](https://vitejs.dev/config/build-options.html#build-rollupoptions) for more details.
+Change this to `['index.html']` if you are planning to use **Vituum** for a SPA app.
 
 ## output
 
@@ -32,6 +32,14 @@ See [Vite Project Root](https://vitejs.dev/guide/#index-html-and-project-root) f
 - **Type:** `(Plugin | Plugin[] | Promise<Plugin | Plugin[]>)[]`
 
 Array of plugins to use. Falsy plugins are ignored and arrays of plugins are flattened. If a promise is returned, it would be resolved before running. See [Vite Plugin API](https://vitejs.dev/guide/api-plugin) for more details on Vite plugins.
+
+## postcss
+
+- **Type:** `string | (postcss.ProcessOptions & { plugins?: postcss.AcceptedPlugin[] })`
+
+Inline PostCSS config or a custom directory to search PostCSS config from (default is project root). 
+
+Extends the default PostCSS plugins already included in **Vituum**. If you want to use your own then use `vite.css.postcss` option. 
 
 ## build.log
 
@@ -107,3 +115,13 @@ You can add a custom filename filter to perform a full page refresh while you ar
 
 - **Type:** `string[]`
 - **Default:** `['emails']`
+
+## templates.format
+
+- **Type:** `string`
+- **Default:** `null`
+
+## templates.formats
+
+- **Type:** `string[]`
+- **Default:** `['json', 'latte', 'twig', 'liquid', 'njk']`

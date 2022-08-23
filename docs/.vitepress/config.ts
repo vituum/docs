@@ -90,6 +90,10 @@ export default defineConfig({
               text: 'Template engines',
               link: '/guide/template-engines'
             },
+            {
+              text: 'Integrations',
+              link: '/guide/integrations'
+            }
           ]
         }
       ],
@@ -106,16 +110,8 @@ export default defineConfig({
               link: '/config/main-options'
             },
             {
-              text: 'Templates',
-              link: '/config/templates-options'
-            },
-            {
-              text: 'Styles',
-              link: '/config/styles-options'
-            },
-            {
-              text: 'Emails',
-              link: '/config/emails-options'
+              text: 'Integrations',
+              link: '/config/integrations-options'
             }
           ]
         }

@@ -6,8 +6,8 @@ titleTemplate: Fast prototyping with template engines and integrated frontend to
 
 hero:
   name: Vituum
-  text: Is Vite with predefined config and set of plugins
-  tagline: Fast prototyping with template engines and integrated frontend tools
+  text: Is Vite with predefined config and integrations
+  tagline: Fast prototyping with template engines and integrated frontend tools
   image:
     src: /logo.svg
     alt: Vituum
@@ -37,7 +37,7 @@ features:
     details: They are great for preparing website templates fast for various backend integrations.
   - icon: 📦
     title: Modular structure
-    details: Pre-defined opinionated structure for your project files.
+    details: Pre-defined optional structure for your project files.
   - icon: ✉️ 
     title: Email templates
     details: Writing email templates was always tricky. Vituum tries to make it easier for you.
