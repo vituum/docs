@@ -5,11 +5,9 @@ These are the main **Vituum** options that can be used. If you want to add vite 
 ## input
 
 - **Type:** `string[]`
-- **Default:** `['./src/views/**/*.html', './src/emails/*.html', './src/styles/*.css', './src/scripts/*.js']`
+- **Default:** `['./src/views/**/*.html', './src/emails/*.html', './src/styles/*.{css,pcss,scss,sass,less,styl,stylus}', './src/scripts/*.{js,ts,mjs}']`
 
 Project files for build synced with `FastGlob` that are included in Vite as `build.rollupOptions.input`
-
-Change this to `['index.html']` if you are planning to use **Vituum** for a SPA app.
 
 ## output
 
@@ -23,7 +21,7 @@ Specify the output directory for build
 - **Type:** `string`
 - **Default:** `resolve(process.cwd(), 'src')`
 
-Project root directory (where `index.html` is located). Can be an absolute path, or a path relative to the current working directory.
+Project root directory (where source files are located). Can be an absolute path, or a path relative to the current working directory.
 
 See [Vite Project Root](https://vitejs.dev/guide/#index-html-and-project-root) for more details.
 

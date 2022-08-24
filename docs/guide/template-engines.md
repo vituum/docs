@@ -1,22 +1,22 @@
 # Template engines
 
-Following template engines are supported via [Integrations API](/guide/integrations). They can be also used separately outside of **Vituum** as plugin in **Vite**. But you loose the extname support for the template engines.
+Following template engines are supported via [Integrations](/guide/integrations). They can be also used separately outside of **Vituum** as plugin in **Vite**. But you loose the ext-name support for the template engines.
 
-You can add pages in the **📁 views** directory, your templates files should be located in **📁&nbsp;templates** directory.<br><br>
+You can add pages in the **📁 views** directory, and your templates files should be located in **📁&nbsp;templates** directory.<br><br>
 Here is an example of how to use **Twig** as a template engine inside the views directory:
-* `*.json` (or `*.json.html`) - for defining a page with data, template is auto-loaded from the `template` variable which can be added in config or in **📁 data** directory
+* `*.json` (or `*.json.html`) - for defining a page with data, template is auto-loaded from the `template` variable which can be added in config or in **📁 data** directory inside a `.json` file (and you can add other shared data for all your templates here)
 * `*.twig` (or `*.twig.html`) - classic twig template file, `.twig.json` file with the same name can be added to add data to the template
-* `*.json.twig` (or `*.json.twig.html`) - for non-html data such as json. `twig` is input and `json` is output as a `.json` file - you can use this if you have custom tag or function that transforms `html` into `json`
+* `*.json.twig` (or `*.json.twig.html`) - for non-html data such as json. `twig` is input and `json` is output (as a `.json` file) - you can use this if you have custom tag or function that transforms `html` into `json`
 
-Same goes for any other template engine, just change the `.twig` to something else. You even use more template engines at the same time.<br><br>
-Only one template engine defined as `*.json` can be used at the same time, you can change the default template engine via `templates.format` in config.
+Same goes for any other template engine, just change the `.twig` to something else. You can even use more template engines at the same time.<br><br>
+Only one template engine defined as `*.json` can be used at the same time though, you can change the default template engine via `templates.format` in config.
 <br><br>
 See [Integrations Options](/config/integrations-options) to learn more how to configure the plugins.
 <br><br>
 See [Trying Vituum Online](/guide/#trying-vituum-online) for various examples of template engines
 <br><br>
 ::: warning
-Most of the plugins are still experimental and feedback is welcome. If you experience any problems or you're missing any additional settings of the template engines add issue on GitHub.
+Most of the plugins are still experimental and feedback is welcome. If you experience any problems or if you're missing any additional settings for the template engines add issue on GitHub.
 :::
 
 ## PostHTML _([@vituum/vite-plugin-posthtml](https://github.com/vituum/vite-plugin-posthtml))_
@@ -52,7 +52,7 @@ export default defineConfig({
 })
 ```
 
-See [@vituum/posthtml](/config/integrations-options#templates-twig) to learn more about config options
+See [@vituum/posthtml](/config/integrations-options#templates-posthtml) to learn more about config options
 
 ## Twig _([@vituum/vite-plugin-twig](https://github.com/vituum/vite-plugin-twig))_
 
@@ -90,6 +90,8 @@ export default defineConfig({
 See [@vituum/twig](/config/integrations-options#templates-twig) to learn more about config options
 
 ## Latte _([@vituum/vite-plugin-latte](https://github.com/vituum/vite-plugin-latte))_
+
+* Requires [PHP (8.x)](https://www.php.net/) or [Docker PHP (8.x)](https://hub.docker.com/_/php) to run
 
 ```handlebars
 <ul id="navigation">
@@ -134,7 +136,8 @@ See [@vituum/latte](/config/integrations-options#templates-latte) to learn more 
 
 ```twig
 <ul id="navigation">
-    {% for item in ['Home', 'About'] %}
+    {% assign items = 'Home,About'|split:',' %}
+    {% for item in items %}
         <li>{{ item }}</li>
     {% endfor %}
 </ul>
@@ -224,7 +227,7 @@ See [docs](https://handlebarsjs.com/) for more info about the syntax
 
 ## Create your own plugin
 
-Vituum can be used with any template engine plugin, the only requirement is that the plugin supports file ext-names such as following (in case of twig)
+Vituum can be used with any template engine plugin, the only requirement is that the plugin supports file ext-names such as following (twig as example)
 * `.json.html` - for defining a page with data, `template` param is used to load default template file
 * `.twig.html` - classic template engine syntax
 * `.twig.json` - data for the template engine syntax

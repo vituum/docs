@@ -17,7 +17,7 @@ export default defineConfig({
 })
 ```
 
-**Vituum** is a wrapper around **Vite**, uses own options and overrides some settings by default and adds additional plugins. See [Main Options](/config/main-options) for more info about **Vituum** options. <br><br>
+**Vituum** is a small wrapper around **Vite**, uses own options and overrides some settings by default and adds additional plugins. See [Main Options](/config/main-options) for more info about **Vituum** options. <br><br>
 These are the main changes which **Vituum** overrides by default in **Vite** config:
 
 ```javascript
@@ -52,6 +52,6 @@ build: {
 
 ## Vite
 
-Any additional vite options can be added via `vite` option and you can further adjust the settings which Vituum changes by default
+Any additional vite options can be added via `vite` option, and you can further adjust the settings which Vituum changes by default
 
 See [Vite config](https://vitejs.dev/config/) for more details.

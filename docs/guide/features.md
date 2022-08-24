@@ -14,15 +14,15 @@ Vituum is by default extended with core **[PostCSS](https://postcss.org/)** plug
 
 Other features such as **[PostHTML](https://posthtml.org/)**, **[Tailwind CSS](https://tailwindcss.com/)**, or [Template engines](/guide/template-engines) can be optionally added with the [Integrations](/guide/integrations). 
 
-With this API you can pre-define config options, plugin options or create tasks that can be runned via `vituum` command. See how we used the API for [@newlogic-digital/core](https://github.com/newlogic-digital/core)
+With this API you can pre-define config options, plugin options or create tasks that can be run via `vituum` command. See how we used the API for [@newlogic-digital/core](https://github.com/newlogic-digital/core)
 
 
 ## 📄 Multi-page support
-Vituum makes it easy to use multiple `.html` files in pages directory out of the box.
+Vituum makes it easy to use multiple `.html` files in views directory out of the box.
 
 You can use this to prototype fast without the need to change anything in the config. 
 
-Even enhance this with [PostHTML](/guide/template-engines#posthtml-vituum-vite-plugin-posthtml) syntax like `<include>` to include small html components or use other [template engines](/guide/template-engines).
+You can even enhance this with [PostHTML](/guide/template-engines#posthtml-vituum-vite-plugin-posthtml) syntax like `<include>` to include small html components or use other [template engines](/guide/template-engines).
 
 Example of the structure:
 * 📁 **src**
@@ -72,7 +72,7 @@ Example of the structure:
 ## ⬇️ Imports
 In vanilla `css` and `js` you can import one file at the time. Globs like `*.css` or `*.js` are not possible.
 
-To help import multiple files automatically, **Vituum** uses internal plugin which adds all imports in the directories into a single file.
+To help import multiple files automatically, **Vituum** uses internal plugin which adds all file imports in the directories into a single file.
 
 This is great if you have complex project with a lot of styles or scripts files.
 

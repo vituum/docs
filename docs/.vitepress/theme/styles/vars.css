@@ -4,9 +4,9 @@
 
 :root {
   --vp-c-brand: #038aff;
-  --vp-c-brand-light: #038aff;
-  --vp-c-brand-lighter: #038aff;
-  --vp-c-brand-lightest: #038aff;
+  --vp-c-brand-light: #36a1ff;
+  --vp-c-brand-lighter: #36a1ff;
+  --vp-c-brand-lightest: #69b9ff;
   --vp-c-brand-dark: #038aff;
   --vp-c-brand-darker: #038aff;
   --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);

@@ -3,7 +3,7 @@ With this API you can pre-define config options, plugin options or create tasks 
 
 ## Tailwind _([@vituum/tailwind](https://www.npmjs.com/package/@vituum/tailwind))_
 
-Adds out of the box support for **TailwindCSS** to your project. Also with the same core PostCSS plugins already included in **Vituum**.
+Adds out of the box support for **TailwindCSS** to your project. Also, with the same core PostCSS plugins already included in **Vituum**.
 
 See [docs](https://tailwindcss.com/docs) for more info about **TailwindCSS**
 
