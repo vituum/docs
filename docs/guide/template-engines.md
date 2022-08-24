@@ -201,9 +201,9 @@ export default defineConfig({
 })
 ```
 
-See [templates.nunjucks](/config/integrations-options#templates-nunjucks) to learn more about config options
+See [@vituum/nunjucks](/config/integrations-options#templates-nunjucks) to learn more about config options
 
-## Pug _([@vituum/vite-plugin-pug](https://github.com/vituum/vite-plugin-pug))(coming soon)_
+## Pug _([@vituum/vite-plugin-pug](https://github.com/vituum/vite-plugin-pug))_
 
 ```pug
 ul(id='navigation')
@@ -213,17 +213,63 @@ ul(id='navigation')
 
 See [docs](https://pugjs.org) for more info about the syntax
 
-## Handlebars _([@vituum/vite-plugin-handlebars](https://github.com/vituum/vite-plugin-handlebars))(coming soon)_
+### Install
+**npm**
+```bash
+npm i @vituum/pug --save-dev
+```
+**yarn**
+```bash
+yarn add @vituum/pug -D
+```
+For use outside **Vituum** as **Vite** plugin use `@vituum/vite-plugin-pug`
+
+### Config
+```javascript
+import { defineConfig } from 'vituum'
+import pug from '@vituum/pug'
+
+export default defineConfig({
+    integrations: [pug()]
+})
+```
+
+See [@vituum/pug](/config/integrations-options#templates-pug) to learn more about config options
+
+## Handlebars _([@vituum/vite-plugin-handlebars](https://github.com/vituum/vite-plugin-handlebars))_
 ```handlebars
 ```twig
 <ul id="navigation">
-    {{#each item as |navigation|}}
+    {{#each navigation as |item|}}
         <li>{{ item }}</li>
     {{/each}}
 </ul>
 ```
 
 See [docs](https://handlebarsjs.com/) for more info about the syntax
+
+### Install
+**npm**
+```bash
+npm i @vituum/handlebars --save-dev
+```
+**yarn**
+```bash
+yarn add @vituum/handlebars -D
+```
+For use outside **Vituum** as **Vite** plugin use `@vituum/vite-plugin-handlebars`
+
+### Config
+```javascript
+import { defineConfig } from 'vituum'
+import handlebars from '@vituum/handlebars'
+
+export default defineConfig({
+    integrations: [handlebars()]
+})
+```
+
+See [@vituum/handlebars](/config/integrations-options#templates-handlebars) to learn more about config options
 
 ## Create your own plugin
 

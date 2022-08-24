@@ -10,6 +10,12 @@ It's a small wrapper around **Vite** which includes predefined config and set of
 
 You can learn more about **Vituum** and it's features at the [Features page](/guide/features)
 
+::: warning
+Vituum is in early preview. Can be used for production, but some features may change overtime.
+* some refactoring is needed, also not written in TypeScript at the time
+* tests via Vitest need to be written
+* template plugins are still experimental and feedback is welcome
+:::
 
 ## Scaffolding Your First Vituum Project
 ```bash
@@ -73,6 +79,8 @@ You can also try Vituum online on [StackBlitz](https://stackblitz.com/).
 
 </div>
 </div>
+
+All sources can be found on [GitHub](https://github.com/vituum/vituum/tree/main/examples).
 
 ## Basic commands
 

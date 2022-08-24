@@ -189,3 +189,57 @@ SMTP Password from to send, you can also use `VITUUM_SMTP_PASS` in `.env` file
 
 ### filetypes
 - **Type:** `object`
+
+## [@vituum/pug](https://www.npmjs.com/package/@vituum/pug)
+
+### filters
+- **Type:** `object`
+- **Default:** `{}`
+
+### data
+- **Type:** `string`
+- **Default:** `''`
+
+### globals
+- **Type:** `object`
+- **Default:** `{}`
+
+### filetypes
+- **Type:** `object`
+
+### compileOptions
+- **Type:** `object`
+- **Default:** `{}`
+
+## [@vituum/handlebars](https://www.npmjs.com/package/@vituum/handlebars)
+
+### helpers
+- **Type:** `object`
+- **Default:** `{}`
+
+### data
+- **Type:** `string`
+- **Default:** `''`
+
+### globals
+- **Type:** `object`
+- **Default:** `{}`
+
+### partials.directory
+- **Type:** `string`
+- **Default:** `null`
+
+### partials.extname
+- **Type:** `boolean`
+- **Default:** `true`
+
+### filetypes
+- **Type:** `object`
+
+### compileOptions
+- **Type:** `object`
+- **Default:** `{}`
+
+### runtimeOptions
+- **Type:** `object`
+- **Default:** `{}`
