@@ -64,7 +64,7 @@ You can also try Vituum online on [StackBlitz](https://stackblitz.com/).
 * [vituum + liquid](https://stackblitz.com/github/vituum/vituum/tree/main/examples/liquid)
 * [vituum + nunjucks](https://stackblitz.com/github/vituum/vituum/tree/main/examples/nunjucks)
 * [vituum + handlebars](https://stackblitz.com/github/vituum/vituum/tree/main/examples/handlebars)
-* [vituum + pug](https://stackblitz.com/github/vituum/vituum/tree/main/examples/bug)
+* [vituum + pug](https://stackblitz.com/github/vituum/vituum/tree/main/examples/pug)
 
 </div>
 
