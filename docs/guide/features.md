@@ -6,6 +6,8 @@ Think of it like a **Vite starter pack** ready to go with some added features li
 
 It's also a bridge for developers who still depend on template engines or older front-end tools like **gulp** or **grunt** and want to migrate to **Vite**.
 
+Vituum can be also used as a static site generator, but we recommend using [Astro](https://astro.build/) or [Eleventy](https://www.11ty.dev/) for full such experience.
+
 
 ## 🛠️ Predefined config and integrations
 Learn more how Vituum changes the default Vite config in [here](/config/)
