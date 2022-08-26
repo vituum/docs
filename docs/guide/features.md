@@ -1,12 +1,12 @@
 # About Vituum and it's features
 
-The main feature of Vituum is to have minimal config with all modern frontend features cooked-in out of the box and ready to go.
+The main feature of Vituum is to add some additional features on top of Vite. With minimal config and all modern frontend features cooked-in out of the box.
 
-Think of it like a **Vite starter pack** ready to go with some added features listed below.
+Think of it like a **Vite starter pack** ready to go.
 
 It's also a bridge for developers who still depend on template engines or older front-end tools like **gulp** or **grunt** and want to migrate to **Vite**.
 
-Vituum can be also used as a static site generator, but we recommend using [Astro](https://astro.build/) or [Eleventy](https://www.11ty.dev/) for full such experience.
+Vituum can be also used as a static site generator, but we recommend using [Astro](https://astro.build/) or [Eleventy](https://www.11ty.dev/) for such a full experience.
 
 
 ## 🛠️ Predefined config and integrations
