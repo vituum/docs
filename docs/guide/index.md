@@ -2,16 +2,16 @@
 
 ## Overview
 
-Vituum is a mix of words **Vite** _(French word for "quick")_ and **Tuum** _<br>(Estonion word for "core")_<br><br>
+Vituum is a mix of words **Vite** _(French word for "quick")_ and **Tuum** _<br>(Estonian word for "core")_<br><br>
 It's a small wrapper around **Vite** which includes predefined config and set of plugins.
 
 * Primary focus is on easy `backend integration`, but can be used for anything.
 * Modified build command `vituum build` is used, which supports building of template engine files ending with extname such as `.twig` and `.latte`
 
-You can learn more about **Vituum** and it's features at the [Features page](/guide/features)
+You can learn more about **Vituum** and its features at the [Features page](/guide/features)
 
 ::: warning
-Vituum is in early preview. Can be used for production, but some features may change overtime.
+Vituum is in early preview. Can be used for production, but some features may change over time.
 * some refactoring is needed, also not written in TypeScript at the time
 * tests via Vitest need to be written
 * template plugins are still experimental and feedback is welcome
@@ -23,7 +23,7 @@ $ mkdir my-project && cd my-project
 $ npm i vituum --save-dev
 ```
 
-Then add your Vituum [config](/config/). After that you can run Vite.
+Then add your Vituum [config](/config/). You can run Vite after that.
 
 ```bash
 $ npx vite

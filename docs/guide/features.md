@@ -1,4 +1,4 @@
-# About Vituum and it's features
+# About Vituum and its features
 
 The main feature of Vituum is to add some additional features on top of Vite. With minimal config and all modern frontend features cooked-in out of the box.
 
@@ -6,7 +6,7 @@ Think of it like a **Vite starter pack** ready to go.
 
 It's also a bridge for developers who still depend on template engines or older front-end tools like **gulp** or **grunt** and want to migrate to **Vite**.
 
-Vituum can be also used as a static site generator, but we recommend using [Astro](https://astro.build/) or [Eleventy](https://www.11ty.dev/) for such a full experience.
+Vituum can also be used as a static site generator, but we recommend using [Astro](https://astro.build/) or [Eleventy](https://www.11ty.dev/) for such a full experience.
 
 
 ## 🛠️ Predefined config and integrations
@@ -72,11 +72,11 @@ Example of the structure:
 
 
 ## ⬇️ Imports
-In vanilla `css` and `js` you can import one file at the time. Globs like `*.css` or `*.js` are not possible.
+In vanilla `css` and `js` you can import one file at a time. Globs like `*.css` or `*.js` are not possible.
 
 To help import multiple files automatically, **Vituum** uses internal plugin which adds all file imports in the directories into a single file.
 
-This is great if you have complex project with a lot of styles or scripts files.
+This is great if you have a complex project with a lot of styles or scripts files.
 
 All filetypes are supported, so you can use this also with `.css`, `.less`, `.scss` <br>or `.js`,  `.ts` or add your own via [config](/config/main-options#imports-extnamepattern-styles).
 

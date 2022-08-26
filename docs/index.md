@@ -25,7 +25,7 @@ hero:
 features:
   - icon: ⚡️
     title: Vite integrated
-    details: Blazing fast and next generation frontend tooling. Vituum is wrapper around Vite.
+    details: Blazing fast and next generation frontend tooling. Vituum is a wrapper around Vite.
   - icon: 🚀️️
     title: Fast prototyping
     details: Vituum has multi-page support, so you can prototype fast with various templates.

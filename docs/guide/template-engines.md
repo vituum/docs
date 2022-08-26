@@ -1,6 +1,6 @@
 # Template engines
 
-Following template engines are supported via [Integrations](/guide/integrations). They can be also used separately outside of **Vituum** as plugin in **Vite**. But you loose the ext-name support for the template engines.
+Following template engines are supported via [Integrations](/guide/integrations). They can be also used separately outside of **Vituum** as plugin in **Vite**. But you lose the ext-name support for the template engines.
 
 You can add pages in the **📁 views** directory, and your templates files should be located in **📁&nbsp;templates** directory.<br><br>
 Here is an example of how to use **Twig** as a template engine inside the views directory:
