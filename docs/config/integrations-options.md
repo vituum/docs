@@ -171,6 +171,18 @@ Additional TwigJS renderOptions, see TwigJS [wiki](https://github.com/twigjs/twi
 
 ## [@vituum/latte](https://www.npmjs.com/package/@vituum/latte)
 
+### reload
+- **Type:** `boolean` or `function`
+- **Default:** `true`
+
+Whenever to auto-reload browser window upon `html`, `latte` or `json` file change. You can provide function to filter upon which file a reload should occur.
+
+### root
+- **Type:** `string`
+- **Default:** `null`
+
+Root is inherited from Vite `root` by default. For example, you can change this to `resolve(process.cwd(), 'src/templates')`, then you can use includes with paths defaulting to this directory.
+
 ### filters
 - **Type:** `object`
 - **Default:** `{}`
@@ -268,6 +280,18 @@ For example, this is by default in **Vituum**.
 
 ## [@vituum/nunjucks](https://www.npmjs.com/package/@vituum/nunjucks)
 
+### reload
+- **Type:** `boolean` or `function`
+- **Default:** `true`
+
+Whenever to auto-reload browser window upon `html`, `njk` or `json` file change. You can provide function to filter upon which file a reload should occur.
+
+### root
+- **Type:** `string`
+- **Default:** `null`
+
+Root is inherited from Vite `root` by default. For example, you can change this to `resolve(process.cwd(), 'src/templates')`, then you can use includes with paths defaulting to this directory.
+
 ### filters
 - **Type:** `object`
 - **Default:** `{}`
@@ -306,7 +330,25 @@ For example, this is by default in **Vituum**.
 }
 ```
 
+### nunjucks
+- **Type:** `object`
+- **Default:** `{}`
+
+Additional Nunjucks options, see Nunjucks [docs](https://mozilla.github.io/nunjucks/api.html#environment) for more info.
+
 ## [@vituum/pug](https://www.npmjs.com/package/@vituum/pug)
+
+### reload
+- **Type:** `boolean` or `function`
+- **Default:** `true`
+
+Whenever to auto-reload browser window upon `html`, `pug` or `json` file change. You can provide function to filter upon which file a reload should occur.
+
+### root
+- **Type:** `string`
+- **Default:** `null`
+
+Root is inherited from Vite `root` by default. For example, you can change this to `resolve(process.cwd(), 'src/templates')`, then you can use includes with paths defaulting to this directory.
 
 ### filters
 - **Type:** `object`
@@ -340,13 +382,25 @@ For example, this is by default in **Vituum**.
 }
 ```
 
-### compileOptions
+### pug
 - **Type:** `object`
 - **Default:** `{}`
 
 Additional Pug options, see Pug [docs](https://pugjs.org/api/reference.html) for more info.
 
 ## [@vituum/handlebars](https://www.npmjs.com/package/@vituum/handlebars)
+
+### reload
+- **Type:** `boolean` or `function`
+- **Default:** `true`
+
+Whenever to auto-reload browser window upon `html`, `hbs` or `json` file change. You can provide function to filter upon which file a reload should occur.
+
+### root
+- **Type:** `string`
+- **Default:** `null`
+
+Root is inherited from Vite `root` by default. For example, you can change this to `resolve(process.cwd(), 'src/templates')`, then you can use includes with paths defaulting to this directory.
 
 ### helpers
 - **Type:** `object`
@@ -370,7 +424,7 @@ Other global data to use. Can be `object` or `function` returning object, or com
 - **Type:** `string`
 - **Default:** `null`
 
-Root directory for partials. Directory is inherited from Vite `root` by default.
+Root directory for partials. Directory is inherited from plugin `root` by default.
 
 ### partials.extname
 - **Type:** `boolean`
@@ -392,13 +446,13 @@ For example, this is by default in **Vituum**.
 }
 ```
 
-### compileOptions
+### handlebars.compileOptions
 - **Type:** `object`
 - **Default:** `{}`
 
 Additional Handlebars compileOptions, see Handlebars [docs](https://handlebarsjs.com/api-reference/compilation.html) for more info. Not well documented actually.
 
-### runtimeOptions
+### handlebars.runtimeOptions
 - **Type:** `object`
 - **Default:** `{}`
 
