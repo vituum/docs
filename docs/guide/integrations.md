@@ -76,6 +76,12 @@ Learn more about use of this integration [here](/guide/template-engines#liquid-v
 ## Nunjucks _([@vituum/nunjucks](https://www.npmjs.com/package/@vituum/nunjucks))_
 Learn more about use of this integration [here](/guide/template-engines#nunjucks-vituum-vite-plugin-nunjucks)
 
+## Pug _([@vituum/pug](https://www.npmjs.com/package/@vituum/pug))_
+Learn more about use of this integration [here](/guide/template-engines#nunjucks-vituum-vite-plugin-pug)
+
+## Handlebars _([@vituum/handlebars](https://www.npmjs.com/package/@vituum/handlebars))_
+Learn more about use of this integration [here](/guide/template-engines#nunjucks-vituum-vite-plugin-handlebars)
+
 ## Create your own integration
 
 You can get inspiration from the code of official **Vituum** integrations [here](https://github.com/vituum/vituum/tree/main/packages/integrations).
