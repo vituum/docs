@@ -31,7 +31,7 @@ Paths in which html files will be processed with [Juice](https://github.com/Auto
 
 Whenever to add default attributes `border="0" cellpadding="0" cellspacing="0"` to every table.
 
-### options
+### juice
 
 - **Type:** `object`
 - **Default:** `{}`
