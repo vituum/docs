@@ -121,7 +121,8 @@
 }
 
 .VPHero .image-bg {
-  opacity: 0.5;
+  opacity: 0.4;
+  animation: logo 6s infinite;
 }
 
 .VPHomeSponsors .message {
@@ -131,5 +132,17 @@
 @media (min-width: 768px) {
   [src*="newlogic.svg"] {
     transform: scale(1.5);
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
   }
 }
