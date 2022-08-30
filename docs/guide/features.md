@@ -102,7 +102,7 @@ Example of the structure:
 ## ✉️ Emails
 Writing email templates was always tricky. **Vituum** tries to make it easier for you.
 
-You can add [@vituum/juice](/guide/integrations#juice-vituum-juice) integration and then write styles in **PostCSS** or any **post-processor** you want. Everything will be inlined to html via **[Juice](https://github.com/Automattic/juice)**.
+You can add [@vituum/juice](/guide/integrations#juice-vituum-juice) integration and then write styles in **PostCSS** or any **pre-processor** you want. Everything will be inlined to html via **[Juice](https://github.com/Automattic/juice)**.
 
 Html can be written with any [template engine](/guide/template-engines), including **PostHTML**.
 
