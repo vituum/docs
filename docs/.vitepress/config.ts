@@ -19,7 +19,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@newlogicdigital' }],
     ['meta', { name: 'theme-color', content: '#2d55ff' }],
-    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-JFTXYZ6Q63' }],
+    ['script', { async: '' }],
     ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied' });\ngtag('config', 'G-JFTXYZ6Q63');"]
   ],
 
