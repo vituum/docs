@@ -14,3 +14,14 @@ const { data } = useSponsor()
     :data="data"
   />
 </template>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JFTXYZ6Q63"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied' });
+
+gtag('config', 'G-JFTXYZ6Q63');
+</script>
