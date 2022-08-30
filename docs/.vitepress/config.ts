@@ -34,7 +34,8 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vituum/vituum' }
+      { icon: 'github', link: 'https://github.com/vituum/vituum' },
+      { icon: 'twitter', link: 'https://twitter.com/vituum_dev' }
     ],
 
     algolia: {
