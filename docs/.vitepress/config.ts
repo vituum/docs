@@ -39,8 +39,8 @@ export default defineConfig({
     ],
 
     algolia: {
-      appId: '',
-      apiKey: '',
+      appId: 'VB79JXJIAA',
+      apiKey: 'bf58aa7e2d7315d529827f53149ddebe',
       indexName: 'vituum',
       searchParameters: {
         facetFilters: ['tags:en']
