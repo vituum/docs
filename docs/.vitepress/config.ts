@@ -18,9 +18,7 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: ogDescription }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@newlogicdigital' }],
-    ['meta', { name: 'theme-color', content: '#2d55ff' }],
-    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-JFTXYZ6Q63' }],
-    ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('consent', 'default', { 'ad_storage': 'denied' });\ngtag('js', new Date());\ngtag('config', 'G-JFTXYZ6Q63');"]
+    ['meta', { name: 'theme-color', content: '#2d55ff' }]
   ],
 
   vue: {
