@@ -31,6 +31,13 @@ Paths in which html files will be processed with [Juice](https://github.com/Auto
 
 Whenever to add default attributes `border="0" cellpadding="0" cellspacing="0"` to every table.
 
+### doctype
+
+- **Type:** `string`
+- **Default:** `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">`
+
+Default doctype to use, replaces `<!DOCTYPE html>` from your `.html` with your doctype to use in emails.
+
 ### juice
 
 - **Type:** `object`
