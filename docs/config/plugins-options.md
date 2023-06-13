@@ -311,7 +311,7 @@ Object of named extensions to use, see Nunjucks [docs](https://mozilla.github.io
 - **Type:** `string`
 - **Default:** `''`
 
-Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.jsom`.
+Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.json`.
 
 ### globals
 - **Type:** `object`
