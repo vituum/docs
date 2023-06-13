@@ -21,10 +21,6 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#2d55ff' }]
   ],
 
-  vue: {
-    reactivityTransform: true
-  },
-
   themeConfig: {
     logo: '/logo.svg',
 
@@ -89,8 +85,8 @@ export default defineConfig({
               link: '/guide/template-engines'
             },
             {
-              text: 'Integrations',
-              link: '/guide/integrations'
+              text: 'Plugins',
+              link: '/guide/plugins'
             }
           ]
         }

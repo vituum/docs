@@ -3,28 +3,33 @@
 ## Overview
 
 Vituum is a mix of words **Vite** _(French word for "quick")_ and **Tuum** _<br>(Estonian word for "core")_<br><br>
-It's a small wrapper around **Vite** which includes predefined config and set of plugins.
+It's a set of plugins for **Vite**, full list can be found on [Plugins page](/plugins).
 
-* Primary focus is on easy `backend integration`, but can be used for anything.
-* Modified build command `vituum build` is used, which supports building of template engine files ending with extname such as `.twig` and `.latte`
-
-You can learn more about **Vituum** and its features at the [Features page](/guide/features)
-
-::: warning
-Vituum is in early preview. Can be used for production, but some features may change over time.
-* some refactoring is needed, also not written in TypeScript at the time
-* tests via Vitest need to be written
-* template plugins are still experimental and feedback is welcome
-:::
-
-## Scaffolding Your First Vituum Project
+## Get started
 ```bash
-$ mkdir my-project && cd my-project
+$ npm create vite@latest
 $ npm i vituum --save-dev
 ```
 
-Then add your Vituum [config](/config/). You can run Vite after that.
+Then add Vituum to your [Vite config](https://vitejs.dev/config/), this adds basic multi-page `.html` support.<br>
+Add more functionality, template engines and more with [Vituum plugins](/plugins).
 
+```javascript
+import vituum from 'vituum'
+
+export default {
+    plugins: [
+        vituum()
+    ],
+    build: {
+        rollupOptions: {
+            input: ['./src/pages/**/*.{html}', './src/main.js', './src/main.css']
+        }
+    }
+}
+
+```
+And start Vite. Or build your project, see [Vite docs](https://vitejs.dev/guide/cli.html) for more info.
 ```bash
 $ npx vite
 ```
@@ -81,11 +86,3 @@ You can also try Vituum online on [StackBlitz](https://stackblitz.com/).
 </div>
 
 All sources can be found on [GitHub](https://github.com/vituum/vituum/tree/main/examples).
-
-## Basic commands
-
-* `vite` - runs the vite dev server
-* `vituum build` - builds the files into `public` directory
-* `vituum headless` - builds all files except html into `public` directory
-* `vituum cleanup` - cleans the `src` and `public` dirs of built or temp files
-* `vite preview` - preview the built files via vite dev server

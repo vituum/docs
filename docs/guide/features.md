@@ -1,23 +1,12 @@
 # About Vituum and its features
 
-The main feature of Vituum is to add some additional features on top of Vite. With minimal config and all modern frontend features cooked-in out of the box.
+The main feature of Vituum is to add some additional features on top of Vite via plugins. With minimal config and all modern frontend features cooked-in out of the box.
 
 Think of it like a **Vite starter pack** ready to go.
 
 It's also a bridge for developers who still depend on template engines or older front-end tools like **gulp** or **grunt** and want to migrate to **Vite**.
 
-Vituum can also be used as a static site generator, but we recommend using [Astro](https://astro.build/) or [Eleventy](https://www.11ty.dev/) for such a full experience.
-
-
-## 🛠️ Predefined config and integrations
-Learn more how Vituum changes the default Vite config in [here](/config/)
-
-Vituum is by default extended with core **[PostCSS](https://postcss.org/)** plugins _(postcss-import, postcss-nesting, custom-media, custom-selectors)_ ready to use that modern css syntax today.
-
-Other features such as **[PostHTML](https://posthtml.org/)**, **[Tailwind CSS](https://tailwindcss.com/)**, or [Template engines](/guide/template-engines) can be optionally added with the [Integrations](/guide/integrations). 
-
-With this API you can pre-define config options, plugin options or create tasks that can be run via `vituum` command. See how we used the API for [@newlogic-digital/core](https://github.com/newlogic-digital/core)
-
+Vituum can also be used as a small static site generator, but we recommend using [Astro](https://astro.build/) or [Eleventy](https://www.11ty.dev/) for a full SSG experience.
 
 ## 📄 Multi-page support
 Vituum makes it easy to use multiple `.html` files in views directory out of the box.
@@ -37,38 +26,35 @@ Example of the structure:
       * 📄 about.html
 
 ## 📁 Project structure
-Pre-defined optional structure for your project files. You can always change the structure to your own liking via [config](/config/main-options#input).
+Pre-defined optional structure for your template files. You can always change the structure to your own liking via [config](/config/main-options#input).
 
 * 📁 **public** - place for static files and dist files
 * 📁 **src**
-    * 📁 **assets** - your static files as `.png`, `.svg`
     * 📁 **data** - your `.json` data used in templates
     * 📁 **emails** - your email templates
-    * 📁 **scripts** - your script files as `.js`, `.ts`
-    * 📁 **styles** - your styles files as `.css`, `.scss`
     * 📁 **templates** - your template files as `.twig`, `.latte`
-    * 📁 **views** - your pages as `.html`, you can also nest and define page as `.json` or `.twig`, `.latte` and other
+    * 📁 **pages** - your pages as `.html`, you can also nest and define page as `.json` or `.twig`, `.latte` and other
 
 ## 💡 Template Engines
-Today frontend tools are awesome, but the good old template engines don't get enough love.
+Today frontend tools are awesome, but the good old template engines don't get enough love anymore.
 
-Vituum tries to change that with support for template engines in Vite. Gotta go fast with the templates!
+Vituum tries to change that with support for template engines in Vite.<br>Let's go Vite with the templates!
 
-**Twig**, **Liquid**, **Pug**, **Nunjucks**, **Handlebars** - there are a bunch of them!
+**Twig**, **Liquid**, **Pug**, **Nunjucks**, **Handlebars**, **Latte** - there are a bunch of them!
 
-Template engines are great for fast prototyping and preparing templates fast for backend integrations like Symfony, Laravel or Nette.
+Template engines are great for fast prototyping and preparing templates fast for PHP backend frameworks like Symfony, Laravel or Nette.
 
 Example of the structure:
 * 📁 **src**
     * 📁 **templates**
         * 📄 Layout.twig
-    * 📁 **views**
+    * 📁 **pages**
         * 📁 **nested**
             * 📄 index.twig
         * 📄 index.json
         * 📄 about.twig
 
-<br>Learn more about supported template engines [here](/guide/template-engines).
+<br>Learn more what template engines you can add to Vite [here](/guide/template-engines).
 
 
 ## ⬇️ Imports
@@ -102,7 +88,7 @@ Example of the structure:
 ## ✉️ Emails
 Writing email templates was always tricky. **Vituum** tries to make it easier for you.
 
-You can add [@vituum/juice](/guide/integrations#juice-vituum-juice) integration and then write styles in **PostCSS** or any **pre-processor** you want. Everything will be inlined to html via **[Juice](https://github.com/Automattic/juice)**.
+You can add [@vituum/vite-plugin-juice](/guide/plugins#juice) plugin and then write styles in **PostCSS** or any **pre-processor** you want. Everything will be inlined to html via **[Juice](https://github.com/Automattic/juice)**.
 
 Html can be written with any [template engine](/guide/template-engines), including **PostHTML**.
 
@@ -128,11 +114,11 @@ Example how to import `css` in template file:
 ```
 You can find more examples [here](/guide/#trying-vituum-online).
 
-**Want to test your email?**<br>You can use `vituum send` command which is included in the `@vituum/juice` to send a test email with your template. Learn more how to configure this [here](/config/integrations-options#vituum-juice).
+<s>**Want to test your email?**<br>You can use `vituum send` command which is included in the `@vituum/juice` to send a test email with your template. Learn more how to configure this [here](/config/integrations-options#vituum-juice).</s>
 
 ## Other use
 Don't need template engines? You just want to write a **Vue** or **React** app?<br> **Sure no problem, we do too!**
 
-**Vituum** is a wrapper around **Vite**, so anything you can do in Vite, you can do in Vituum. And with some features like **PostCSS** plugins or **TailwindCSS** ready to go!
+**Vituum** is a set of plugins for **Vite**. So you can add other plugins like **PostCSS** or **TailwindCSS**, or any of the internal plugins! Learn more on [Plugins page](/plugins).
 
-See all examples of use [here](/guide/#trying-vituum-online)
+Or go see all examples of usage [here](/guide/#trying-vituum-online).
