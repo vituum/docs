@@ -123,11 +123,11 @@ Example how to import `css` in template file:
 ```
 You can find more examples [here](/guide/#trying-vituum-online).
 
-<s>**Want to test your email?**<br>You can use `vituum send` command which is included in the `@vituum/juice` to send a test email with your template. Learn more how to configure this [here](/config/plugins-options#vituum-juice).</s>
+<s>**Want to test your email?**<br>You can use `vituum send` command which is included in the `@vituum/vite-plugin-juice` to send a test email with your template. Learn more how to configure this [here](/config/plugins-options#vituum-juice).</s>
 
 ## Other use
 Don't need template engines? You just want to write a **Vue** or **React** app?<br> **Sure no problem, we do too!**
 
-**Vituum** is a set of plugins for **Vite**. So you can add other plugins like **PostCSS** or **TailwindCSS** to your project, or any of the internal plugins! Learn more on [Plugins page](/plugins).
+**Vituum** is a set of plugins for **Vite**. So you can add other plugins like **PostCSS** or **TailwindCSS** to your project, or any of the internal plugins! Learn more on [Plugins page](/guide/plugins).
 
 Or go see all examples of usage [here](/guide/#trying-vituum-online).
