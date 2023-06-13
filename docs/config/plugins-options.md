@@ -1,21 +1,31 @@
-# Integrations Options
+# Plugins Options
 
-See [Integrations API](/guide/integrations) to learn more about this section.
+See [Plugins](/guide/plugins) to learn more about this section.
 
-## integrations
+## [@vituum/vite-plugin-posthtml](https://www.npmjs.com/package/@vituum/vite-plugin-posthtml)
 
-- **Type:** `(Integration | Integration[])[]`
+### plugins
+- **Type:** `(Plugin | Plugin[] | Promise<Plugin | Plugin[]>)[]`
+- **Default:** `[]`
 
-Array of integrations to use. Integration should be function returning object or object. All available options to official integrations can be found on this page.
+Additional PostHTML plugins to use. See PostHTML [GitHub](https://github.com/posthtml) for list of all official plugins.
 
-## [@vituum/tailwind](https://www.npmjs.com/package/@vituum/tailwind)
+### options
+- **Type:** `object`
+- **Default:** `{}`
+
+Additional PostHTML options to use. See PostHTML [options](https://posthtml.org/#/core?id=posthtml-options) for more info.
+
+## [@vituum/vite-plugin-postcss](https://www.npmjs.com/package/@vituum/vite-plugin-postcss)
+
+## [@vituum/vite-plugin-tailwind](https://www.npmjs.com/package/@vituum/vite-plugin-tailwind)
 
 - **Type:** `object`
 - **Default:** `{}`
 
 Optional inline TailwindCSS config. You can use either `tailwind.config.cjs` or inline config here, see more about TailwindCSS configuration [here](https://tailwindcss.com/docs/configuration).
 
-## [@vituum/juice](https://www.npmjs.com/package/@vituum/juice)
+## [@vituum/vite-plugin-juice](https://www.npmjs.com/package/@vituum/vite-plugin-juice)
 
 ### paths
 
@@ -87,21 +97,7 @@ SMTP User from to send, you can also use `VITUUM_SMTP_USER` in `.env` file.
 
 SMTP Password from to send, you can also use `VITUUM_SMTP_PASS` in `.env` file.
 
-## [@vituum/posthtml](https://www.npmjs.com/package/@vituum/posthtml)
-
-### plugins
-- **Type:** `(Plugin | Plugin[] | Promise<Plugin | Plugin[]>)[]`
-- **Default:** `[]`
-
-Additional PostHTML plugins to use. See PostHTML [GitHub](https://github.com/posthtml) for list of all official plugins.
-
-### options
-- **Type:** `object`
-- **Default:** `{}`
-
-Additional PostHTML options to use. See PostHTML [options](https://posthtml.org/#/core?id=posthtml-options) for more info.
-
-## [@vituum/twig](https://www.npmjs.com/package/@vituum/twig)
+## [@vituum/vite-plugin-twig](https://www.npmjs.com/package/@vituum/vite-plugin-twig)
 
 ### reload
 - **Type:** `boolean` or `function`
@@ -176,7 +172,7 @@ Additional TwigJS compileOptions, see TwigJS [wiki](https://github.com/twigjs/tw
 
 Additional TwigJS renderOptions, see TwigJS [wiki](https://github.com/twigjs/twig.js/wiki) for more info. It's not well documented.
 
-## [@vituum/latte](https://www.npmjs.com/package/@vituum/latte)
+## [@vituum/vite-plugin-latte](https://www.npmjs.com/package/@vituum/vite-plugin-latte)
 
 ### reload
 - **Type:** `boolean` or `function`
@@ -233,7 +229,7 @@ For example, this is by default in **Vituum**.
 }
 ```
 
-## [@vituum/liquid](https://www.npmjs.com/package/@vituum/liquid)
+## [@vituum/vite-plugin-liquid](https://www.npmjs.com/package/@vituum/vite-plugin-liquid)
 
 ### reload
 - **Type:** `boolean` or `function`
@@ -285,7 +281,7 @@ For example, this is by default in **Vituum**.
 }
 ```
 
-## [@vituum/nunjucks](https://www.npmjs.com/package/@vituum/nunjucks)
+## [@vituum/vite-plugin-nunjucks](https://www.npmjs.com/package/@vituum/vite-plugin-nunjucks)
 
 ### reload
 - **Type:** `boolean` or `function`
@@ -343,7 +339,7 @@ For example, this is by default in **Vituum**.
 
 Additional Nunjucks options, see Nunjucks [docs](https://mozilla.github.io/nunjucks/api.html#environment) for more info.
 
-## [@vituum/pug](https://www.npmjs.com/package/@vituum/pug)
+## [@vituum/vite-plugin-pug](https://www.npmjs.com/package/@vituum/vite-plugin-pug)
 
 ### reload
 - **Type:** `boolean` or `function`
@@ -395,7 +391,7 @@ For example, this is by default in **Vituum**.
 
 Additional Pug options, see Pug [docs](https://pugjs.org/api/reference.html) for more info.
 
-## [@vituum/handlebars](https://www.npmjs.com/package/@vituum/handlebars)
+## [@vituum/vite-plugin-handlebars](https://www.npmjs.com/package/@vituum/vite-plugin-handlebars)
 
 ### reload
 - **Type:** `boolean` or `function`

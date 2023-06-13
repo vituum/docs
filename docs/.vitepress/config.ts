@@ -104,8 +104,8 @@ export default defineConfig({
               link: '/config/main-options'
             },
             {
-              text: 'Integrations',
-              link: '/config/integrations-options'
+              text: 'Plugins',
+              link: '/config/plugins-options'
             }
           ]
         }
