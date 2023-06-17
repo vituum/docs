@@ -3,8 +3,9 @@
 1.0 is a complete rewrite and various functions were removed or simplified
 
 * Vituum is no longer defined as a wrapper around Vite, but as a Vite plugin
+* PostCSS plugins are no longer included by default, to add them use [@vituum/vite-plugin-postcss](/plugins/postcss)
 * Various main config options were removed, see [config](/config/main-options) for more details what remained
-* `vituum` build command was removed in favour of building directly with vite
+* `vituum` build command was removed in favour of building directly with Vite
 * Integrations were removed, and everything is a Vite plugin now
 
 Here is an example of upgrading the Vituum config from `0.0.X` to `1.0`

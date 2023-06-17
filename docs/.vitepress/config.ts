@@ -88,6 +88,10 @@ export default defineConfig({
             {
               text: 'Email Templates',
               link: '/guide/email-templates'
+            },
+            {
+              text: 'Migrating to 1.0',
+              link: '/guide/migrating-1-0'
             }
           ]
         }
