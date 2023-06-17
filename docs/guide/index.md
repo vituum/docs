@@ -13,7 +13,7 @@ $ npm create vite@latest
 $ npm i vituum --save-dev
 ```
 
-Then add Vituum to your [Vite config](https://vitejs.dev/config/), this adds basic multi-page `.html` support.<br>
+Then add Vituum to your [Vite config](https://vitejs.dev/config/), this adds basic multi-page `.html` support in `src/pages`.<br>
 Add more functionality, template engines and more with [Vituum Plugins](/plugins).
 
 ```javascript
@@ -22,16 +22,7 @@ import vituum from 'vituum'
 export default {
     plugins: [
         vituum()
-    ],
-    build: {
-        // Optional, Vituum adds following paths by default
-        // ./src/pages/**/*.{json,latte,twig,liquid,njk,hbs,pug,html}
-        // ./src/styles/*.{css,pcss,scss,sass,less,styl,stylus}
-        // ./src/scripts/*.{js,ts,mjs}
-        rollupOptions: {
-            input: ['./**/*.{html}', './main.js', './main.css']
-        }
-    }
+    ]
 }
 
 ```
