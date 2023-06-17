@@ -34,3 +34,5 @@ export default {
     ]
 }
 ```
+
+You can also choose to not use Vituum and only use its plugins, that's ok too if you don't need multi-page support and other core features.

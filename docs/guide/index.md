@@ -3,7 +3,7 @@
 ## Overview
 
 Vituum is a mix of words **Vite** _(French word for "quick")_ and **Tuum** _<br>(Estonian word for "core")_<br><br>
-It's a set of plugins for **Vite**, full list can be found on [Plugins page](/guide/plugins).
+It's a set of plugins for **Vite**, full list can be found on [Plugins page](/plugins).
 
 ## Get started
 Already using preview version of Vituum 0.0.x? [Learn more](/guide/migrating-1-0) how to migrate to 1.0.
@@ -14,7 +14,7 @@ $ npm i vituum --save-dev
 ```
 
 Then add Vituum to your [Vite config](https://vitejs.dev/config/), this adds basic multi-page `.html` support.<br>
-Add more functionality, template engines and more with [Vituum plugins](/guide/plugins).
+Add more functionality, template engines and more with [Vituum Plugins](/plugins).
 
 ```javascript
 import vituum from 'vituum'
@@ -24,8 +24,12 @@ export default {
         vituum()
     ],
     build: {
+        // Optional, Vituum adds following paths by default
+        // ./src/pages/**/*.{json,latte,twig,liquid,njk,hbs,pug,html}
+        // ./src/styles/*.{css,pcss,scss,sass,less,styl,stylus}
+        // ./src/scripts/*.{js,ts,mjs}
         rollupOptions: {
-            input: ['./src/pages/**/*.{html}', './src/main.js', './src/main.css']
+            input: ['./**/*.{html}', './main.js', './main.css']
         }
     }
 }

@@ -47,6 +47,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
+      { text: 'Plugins', link: '/plugins/', activeMatch: '/plugins/' },
       { text: 'Config', link: '/config/', activeMatch: '/config/' },
       {
         text: 'Resources',
@@ -81,12 +82,86 @@ export default defineConfig({
               link: '/guide/features'
             },
             {
-              text: 'Template engines',
+              text: 'Template Engines',
               link: '/guide/template-engines'
             },
             {
-              text: 'Plugins',
-              link: '/guide/plugins'
+              text: 'Email Templates',
+              link: '/guide/email-templates'
+            }
+          ]
+        }
+      ],
+      '/plugins/': [
+        {
+          text: 'Plugins',
+          items: [
+            {
+              text: 'Internal',
+              items: [
+                {
+                  text: 'Pages',
+                  link: '/plugins/pages'
+                },
+                {
+                  text: 'Imports',
+                  link: '/plugins/imports'
+                }
+              ]
+            },
+            {
+              text: 'Common',
+              items: [
+                {
+                  text: 'TailwindCSS',
+                  link: '/plugins/tailwindcss'
+                },
+                {
+                  text: 'PostCSS',
+                  link: '/plugins/postcss'
+                },
+                {
+                  text: 'PostHTML',
+                  link: '/plugins/posthtml'
+                },
+                {
+                  text: 'Juice',
+                  link: '/plugins/juice'
+                },
+                {
+                  text: 'Send',
+                  link: '/plugins/send'
+                }
+              ]
+            },
+            {
+              text: 'Template Engines',
+              items: [
+                {
+                  text: 'Liquid',
+                  link: '/plugins/liquid'
+                },
+                {
+                  text: 'Twig',
+                  link: '/plugins/twig'
+                },
+                {
+                  text: 'Latte',
+                  link: '/plugins/latte'
+                },
+                {
+                  text: 'Nunjucks',
+                  link: '/plugins/nunjucks'
+                },
+                {
+                  text: 'Pug',
+                  link: '/plugins/pug'
+                },
+                {
+                  text: 'Handlebars',
+                  link: '/plugins/handlebars'
+                }
+              ]
             }
           ]
         }
@@ -102,10 +177,6 @@ export default defineConfig({
             {
               text: 'Main',
               link: '/config/main-options'
-            },
-            {
-              text: 'Plugins',
-              link: '/config/plugins-options'
             }
           ]
         }

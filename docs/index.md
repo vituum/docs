@@ -7,7 +7,7 @@ titleTemplate: Fast prototyping with template engines in Vite
 hero:
   name: Vituum
   text: Fast Prototyping with Template Engines in Vite
-  tagline: Small fast static site generator for Vite
+  tagline: Small and fast static site generator for Vite
   image:
     src: /logo.svg
     alt: Vituum
