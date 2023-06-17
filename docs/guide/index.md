@@ -13,7 +13,7 @@ $ npm create vite@latest
 $ npm i vituum --save-dev
 ```
 
-Then add Vituum to your [Vite config](https://vitejs.dev/config/), this adds basic multi-page `.html` support in `src/pages`.<br>
+Then add Vituum to your [Vite config](https://vitejs.dev/config/), this adds basic multi-page `.html` support in `src/pages`.
 Add more functionality, template engines and more with [Vituum Plugins](/plugins).
 
 ```javascript
@@ -73,9 +73,10 @@ You can also try Vituum online on [StackBlitz](https://stackblitz.com/).
 <div>
 
 ### CSS
-* [vituum + tailwind](https://stackblitz.com/github/vituum/vituum/tree/main/examples/tailwindcss)
+* [vituum + postcss](https://stackblitz.com/github/vituum/vituum/tree/main/examples/tailwindcss)
+* [vituum + tailwindcss](https://stackblitz.com/github/vituum/vituum/tree/main/examples/tailwindcss)
 * [vituum + openprops](https://stackblitz.com/github/vituum/vituum/tree/main/examples/openprops)
-* [vituum + newlogic ui](https://stackblitz.com/github/vituum/vituum/tree/main/examples/newlogic-ui)
+* [vituum + winduum](https://stackblitz.com/github/vituum/vituum/tree/main/examples/winduum)
 * [vituum + bootstrap](https://stackblitz.com/github/vituum/vituum/tree/main/examples/bootstrap)
 * [vituum + bulma](https://stackblitz.com/github/vituum/vituum/tree/main/examples/bulma)
 
