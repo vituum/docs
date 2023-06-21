@@ -7,7 +7,7 @@ const ogUrl = 'https://vituum.dev'
 
 export default defineConfig({
   title: `Vituum`,
-  description: 'Fast prototyping with template engines and integrated frontend tools',
+  description: ogDescription,
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
@@ -42,7 +42,7 @@ export default defineConfig({
 
     footer: {
       message: `Released under the MIT License.`,
-      copyright: 'Copyright © 2022-present lubomirblazek.cz, newlogic.cz & Vituum Contributors'
+      copyright: 'Copyright © 2023-present lubomirblazek.cz, newlogic.cz & Vituum Contributors'
     },
 
     nav: [

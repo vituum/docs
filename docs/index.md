@@ -24,15 +24,15 @@ hero:
 
 features:
   - icon: ⚡️
-    title: Vite plugins
+    title: Vite Plugins
     details: Blazing fast and next generation frontend tooling. Vituum adds various handy plugins for Vite.
   - icon: 🚀️️
-    title: Fast prototyping
+    title: Fast Prototyping
     details: Vituum has multi-page support, so you can prototype fast with various template engines.
   - icon: 💡
-    title: Template engines
+    title: Template Engines
     details: They are great for preparing website templates fast for various backend integrations.
   - icon: ✉️ 
-    title: Email templates
+    title: Email Templates
     details: Writing email templates was always tricky. Vituum tries to make it easier for you.
 ---
