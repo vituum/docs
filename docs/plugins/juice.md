@@ -1,10 +1,12 @@
 # Juice
 _[@vituum/vite-plugin-juice](https://www.npmjs.com/package/@vituum/vite-plugin-juice)_
 
-Adds support for inlining of your `css` files to `html`.<br>
-It's handy for creating email templates. Learn more about that [here](/guide/features#%E2%9C%89%EF%B8%8F-emails).
+Adds support for inlining your `css` files to `html`.<br>
+It's handy for creating email templates. Learn more about that [here](/guide/features#email-templates).
 
-See [docs](https://github.com/Automattic/juice) for more info about **Juice**.
+See library [docs](https://github.com/Automattic/juice) for more info about **Juice**.
+
+Only PostCSS and CSS is supported, see `juiceLink` option to see how to add support for `less` or `sass`.
 
 ## Install
 **npm**
@@ -18,12 +20,11 @@ yarn add @vituum/vite-plugin-juice -D
 
 ## Config
 ```javascript
-import { defineConfig } from 'vituum'
 import juice from '@vituum/vite-plugin-juice'
 
-export default defineConfig({
-    integrations: [juice()]
-})
+export default {
+    plugins: [juice()]
+}
 ```
 
 ## Options
@@ -31,9 +32,9 @@ export default defineConfig({
 ### paths
 
 - **Type:** `string[]`
-- **Default:** `['emails']`
+- **Default:** `['src/pages/email']`
 
-Paths in which html files will be processed with [Juice](https://github.com/Automattic/juice)
+Paths in which `html` files should be processed with [Juice](https://github.com/Automattic/juice)
 
 ### tables
 
@@ -49,11 +50,19 @@ Whenever to add default attributes `border="0" cellpadding="0" cellspacing="0"` 
 
 Default doctype to use, replaces `<!DOCTYPE html>` from your `.html` with your doctype to use in emails.
 
-### juice
+### juiceLink
 
-- **Type:** `object`
+- **Type:** `function`
+- **Default:** `async href => href`
+
+Only PostCSS and CSS is supported. You can transform `sass` or `less` via this function, to process them manually.
+
+* Sass - https://sass-lang.com/documentation/js-api/
+* Less - https://lesscss.org/usage/#programmatic-usage
+
+### options
+
+- **Type:** `Object`
 - **Default:** `{}`
 
 Additional options for Juice. Learn more about Juice options [here](https://github.com/Automattic/juice#options).
-
-See [@vituum/vite-plugin-juice](/config/plugins-options#vituum-juice) to learn more about config options

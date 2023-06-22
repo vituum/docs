@@ -32,6 +32,24 @@ export default {
 
 ## Options
 
+### root
+- **Type:** `string`
+- **Default:** `null`
+
+Root path to use for built-in `extend` and `include` plugins. Current path of `.html` is used if not defined.
+
+### extend
+- **Type:** `Object | false`
+- **Default:** `{}`
+
+PostHTML [posthtml-extend](https://www.npmjs.com/package/posthtml-extend) plugin options. Can be disabled from loading with `false`.
+
+### include
+- **Type:** `Object | false`
+- **Default:** `{}`
+
+PostHTML [posthtml-include](https://www.npmjs.com/package/posthtml-include) plugin options. Can be disabled from loading with `false`.
+
 ### plugins
 - **Type:** `(Plugin | Plugin[] | Promise<Plugin | Plugin[]>)[]`
 - **Default:** `[]`
@@ -39,7 +57,7 @@ export default {
 Additional PostHTML plugins to use. See PostHTML [GitHub](https://github.com/posthtml) for list of all official plugins.
 
 ### options
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
 Additional PostHTML options to use. See PostHTML [options](https://posthtml.org/#/core?id=posthtml-options) for more info.

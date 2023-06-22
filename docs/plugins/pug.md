@@ -21,61 +21,60 @@ yarn add @vituum/vite-plugin-pug -D
 
 ## Config
 ```javascript
+import vituum from 'vituum'
 import pug from '@vituum/vite-plugin-pug'
 
-export default defineConfig({
-    plugins: [pug()]
-})
+export default {
+    plugins: [vituum(), pug()]
+}
 ```
 
 ## Options
 
 ### reload
-- **Type:** `boolean` or `function`
+- **Type:** `boolean` or `Function`
 - **Default:** `true`
 
-Whenever to auto-reload browser window upon `html`, `pug` or `json` file change. You can provide function to filter upon which file a reload should occur.
+Whenever to auto-reload browser window upon `pug` or `json` file change. You can also provide function to filter upon which file a reload should occur.
 
 ### root
 - **Type:** `string`
 - **Default:** `null`
 
-Root is inherited from Vite `root` by default. For example, you can change this to `resolve(process.cwd(), 'src/templates')`, then you can use includes with paths defaulting to this directory.
+Root is inherited from Vite `root` by default. But you can change this to path such as `'./src/'` or `'./src/templates'`, then you can use includes with paths defaulting to this directory.
 
 ### filters
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
 Object of named filter functions to use, see Pug [docs](https://pugjs.org/language/filters.html#custom-filters) for more info.
 
 ### data
 - **Type:** `string`
-- **Default:** `''`
+- **Default:** `['src/data/**/*.json']`
 
 Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.jsom`.
 
 ### globals
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
-Other global data to use. Can be `object` or `function` returning object, or combination of both.
+Other global data to use. Can be `Object` or `function` returning object, or combination of both.
 
-### filetypes
-- **Type:** `object`
+### ignoredPaths
+- **Type:** `string[]`
+- **Default:** `[]`
 
-Which type of ext-names should be processed by the plugin.
+Which paths should be ignored from processing as TwigJS.
 
-For example, this is by default in **Vituum**.
+### formats
+- **Type:** `string[]`
+- **Default:** `['hbs', 'json.hbs', 'json']`
 
-```javascript
-{
-    html: config.templates.format === 'pug' ? /.(json|json.html|pug.json|pug.json.html|pug|pug.html)$/ : /.(pug.json|pug.json.html|pug|pug.html)$/,
-    json: /.(json.pug|json.pug.html)$/
-}
-```
+Which ext-names should be processed by the plugin.
 
-### pug
-- **Type:** `object`
+### options
+- **Type:** `Object`
 - **Default:** `{}`
 
 Additional Pug options, see Pug [docs](https://pugjs.org/api/reference.html) for more info.

@@ -3,7 +3,7 @@
 ## Overview
 
 Vituum is a mix of words **Vite** _(French word for "quick")_ and **Tuum** _<br>(Estonian word for "core")_<br><br>
-It's a set of plugins for **Vite**, full list can be found on [Plugins page](/plugins).
+It's a set of plugins for **Vite**, full list can be found on [Plugins page](/plugins/).
 
 ## Get started
 Already using preview version of Vituum 0.0.x? [Learn more](/guide/migrating-1-0) how to migrate to 1.0.
@@ -14,7 +14,7 @@ $ npm i vituum --save-dev
 ```
 
 Then add Vituum to your [Vite config](https://vitejs.dev/config/), this adds basic multi-page `.html` support in `src/pages`.
-Add more functionality, template engines and more with [Vituum Plugins](/plugins).
+Add more functionality, template engines and more with [Vituum Plugins](/plugins/).
 
 ```javascript
 import vituum from 'vituum'
@@ -51,7 +51,7 @@ You can also try Vituum online on [StackBlitz](https://stackblitz.com/).
 ### Basic
 * [vituum](https://stackblitz.com/github/vituum/vituum/tree/main/examples/vanilla)
 * [vituum + posthtml](https://stackblitz.com/github/vituum/vituum/tree/main/examples/posthtml)
-* [vituum + vue](https://stackblitz.com/github/vituum/vituum/tree/main/examples/vue)
+* [vituum + postcss](https://stackblitz.com/github/vituum/vituum/tree/main/examples/postcss)
 * [vituum + less](https://stackblitz.com/github/vituum/vituum/tree/main/examples/less)
 * [vituum + sass](https://stackblitz.com/github/vituum/vituum/tree/main/examples/sass)
 * [vituum + juice](https://stackblitz.com/github/vituum/vituum/tree/main/examples/juice)
@@ -73,14 +73,13 @@ You can also try Vituum online on [StackBlitz](https://stackblitz.com/).
 <div>
 
 ### CSS
-* [vituum + postcss](https://stackblitz.com/github/vituum/vituum/tree/main/examples/tailwindcss)
 * [vituum + tailwindcss](https://stackblitz.com/github/vituum/vituum/tree/main/examples/tailwindcss)
-* [vituum + openprops](https://stackblitz.com/github/vituum/vituum/tree/main/examples/openprops)
 * [vituum + winduum](https://stackblitz.com/github/vituum/vituum/tree/main/examples/winduum)
+* [vituum + openprops](https://stackblitz.com/github/vituum/vituum/tree/main/examples/openprops)
 * [vituum + bootstrap](https://stackblitz.com/github/vituum/vituum/tree/main/examples/bootstrap)
 * [vituum + bulma](https://stackblitz.com/github/vituum/vituum/tree/main/examples/bulma)
 
 </div>
 </div>
 
-All sources can be found on [GitHub](https://github.com/vituum/vituum/tree/main/examples).
+All examples can be found on [GitHub](https://github.com/vituum/vituum/tree/main/examples).

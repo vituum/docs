@@ -17,7 +17,7 @@ export default {
 }
 ```
 
-This adds basic [features](/guide/features) like multi-page support and imports. To add more features, you will need to define additional [plugins](/guide/plugins).
+This adds basic [features](/guide/features) like multi-page support and imports. To add more features, you will need to define additional [plugins](/plugins/).
 
 Here is an example of usage with **LiquidJS** and **TailwindCSS**
 

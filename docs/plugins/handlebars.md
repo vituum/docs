@@ -33,34 +33,22 @@ export default {
 ## Options
 
 ### reload
-- **Type:** `boolean` or `function`
+- **Type:** `boolean` or `Function`
 - **Default:** `true`
 
-Whenever to auto-reload browser window upon `html`, `hbs` or `json` file change. You can provide function to filter upon which file a reload should occur.
+Whenever to auto-reload browser window upon `hbs` or `json` file change. You can also provide function to filter upon which file a reload should occur.
 
 ### root
 - **Type:** `string`
 - **Default:** `null`
 
-Root is inherited from Vite `root` by default. For example, you can change this to `resolve(process.cwd(), 'src/templates')`, then you can use includes with paths defaulting to this directory.
+Root is inherited from Vite `root` by default. But you can change this to path such as `'./src/'` or `'./src/templates'`, then you can use includes with paths defaulting to this directory.
 
 ### helpers
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
 Object of named helper functions to use, see Handlebars [docs](https://handlebarsjs.com/api-reference/helpers.html) for more info.
-
-### data
-- **Type:** `string`
-- **Default:** `''`
-
-Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.jsom`.
-
-### globals
-- **Type:** `object`
-- **Default:** `{}`
-
-Other global data to use. Can be `object` or `function` returning object, or combination of both.
 
 ### partials.directory
 - **Type:** `string`
@@ -74,28 +62,39 @@ Root directory for partials. Directory is inherited from plugin `root` by defaul
 
 Whenever to use ext-name in partial path like this `"path/to/partial.hbs`
 
-### filetypes
-- **Type:** `object`
+### data
+- **Type:** `string`
+- **Default:** `['src/data/**/*.json']`
 
-Which type of ext-names should be processed by the plugin.
+Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.jsom`.
 
-For example, this is by default in **Vituum**.
-
-```javascript
-{
-    html: config.templates.format === 'hbs' ? /.(json|json.html|hbs.json|hbs.json.html|hbs|hbs.html)$/ : /.(hbs.json|hbs.json.html|hbs|hbs.html)$/,
-    json: /.(json.hbs|json.hbs.html)$/
-}
-```
-
-### handlebars.compileOptions
-- **Type:** `object`
+### globals
+- **Type:** `Object`
 - **Default:** `{}`
 
-Additional Handlebars compileOptions, see Handlebars [docs](https://handlebarsjs.com/api-reference/compilation.html) for more info. Not well documented actually.
+Other global data to use. Can be `Object` or `function` returning object, or combination of both.
 
-### handlebars.runtimeOptions
-- **Type:** `object`
+### ignoredPaths
+- **Type:** `string[]`
+- **Default:** `[]`
+
+Which paths should be ignored from processing as TwigJS.
+
+### formats
+- **Type:** `string[]`
+- **Default:** `['hbs', 'json.hbs', 'json']`
+
+Which ext-names should be processed by the plugin.
+
+
+### options.compileOptions
+- **Type:** `Object`
 - **Default:** `{}`
 
-Additional Handlebars runtimeOptions, see Handlebars [docs](https://handlebarsjs.com/api-reference/runtime-options.html) for more info. Not well documented actually.
+Additional Handlebars compileOptions, see Handlebars [docs](https://handlebarsjs.com/api-reference/compilation.html) for more info.
+
+### options.runtimeOptions
+- **Type:** `Object`
+- **Default:** `{}`
+
+Additional Handlebars runtimeOptions, see Handlebars [docs](https://handlebarsjs.com/api-reference/runtime-options.html) for more info.

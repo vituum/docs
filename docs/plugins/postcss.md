@@ -26,3 +26,31 @@ export default {
 ```
 
 ## Options
+
+### import
+
+- **Type:** `Object`
+- **Default:** `{}`
+
+PostCSS [postcss-import](https://www.npmjs.com/package/postcss-import plugin options.
+
+### nesting
+
+- **Type:** `Object`
+- **Default:** `{}`
+
+PostCSS [postcss-nesting](https://www.npmjs.com/package/postcss-nesting) plugin options.
+
+### customMedia
+
+- **Type:** `Object`
+- **Default:** `{}`
+
+PostCSS [postcss-custom-media](https://www.npmjs.com/package/postcss-custom-media) plugin options.
+
+### autoprefixer
+
+- **Type:** `Object`
+- **Default:** `{}`
+
+PostCSS [autoprefixer](https://www.npmjs.com/package/autoprefixer) plugin options.

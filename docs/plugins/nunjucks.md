@@ -23,67 +23,66 @@ yarn add @vituum/vite-plugin-nunjucks -D
 
 ## Config
 ```javascript
+import vituum from 'vituum'
 import nunjucks from '@vituum/vite-plugin-nunjucks'
 
 export default {
-    plugins: [nunjucks()]
+    plugins: [vituum(), nunjucks()]
 }
 ```
 
 ## Options
 
 ### reload
-- **Type:** `boolean` or `function`
+- **Type:** `boolean` or `Function`
 - **Default:** `true`
 
-Whenever to auto-reload browser window upon `html`, `njk` or `json` file change. You can provide function to filter upon which file a reload should occur.
+Whenever to auto-reload browser window upon `njk` or `json` file change. You can also provide function to filter upon which file a reload should occur.
 
 ### root
 - **Type:** `string`
 - **Default:** `null`
 
-Root is inherited from Vite `root` by default. For example, you can change this to `resolve(process.cwd(), 'src/templates')`, then you can use includes with paths defaulting to this directory.
+Root is inherited from Vite `root` by default. But you can change this to path such as `'./src/'` or `'./src/templates'`, then you can use includes with paths defaulting to this directory.
 
 ### filters
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
 Object of named filter functions to use, see Nunjucks [docs](https://mozilla.github.io/nunjucks/api.html#custom-filters) for more info.
 
 ### extensions
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
 Object of named extensions to use, see Nunjucks [docs](https://mozilla.github.io/nunjucks/api.html#custom-tags) for more info.
 
 ### data
 - **Type:** `string`
-- **Default:** `''`
+- **Default:** `['src/data/**/*.json']`
 
-Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.json`.
+Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.jsom`.
 
 ### globals
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
-Other global data to use. Can be `object` or `function` returning object, or combination of both.
+Other global data to use. Can be `Object` or `function` returning object, or combination of both.
 
-### filetypes
-- **Type:** `object`
+### ignoredPaths
+- **Type:** `string[]`
+- **Default:** `[]`
 
-Which type of ext-names should be processed by the plugin.
+Which paths should be ignored from processing as TwigJS.
 
-For example, this is by default in **Vituum**.
+### formats
+- **Type:** `string[]`
+- **Default:** `['njk', 'json.njk', 'json']`
 
-```javascript
-{
-    html: (config.templates.format === 'njk' || config.templates.format === 'nunjucks') ? /.(json|json.html|njk.json|njk.json.html|njk|njk.html)$/ : /.(njk.json|njk.json.html|njk|njk.html)$/,
-    json: /.(json.njk|json.njk.html)$/
-}
-```
+Which ext-names should be processed by the plugin.
 
-### nunjucks
-- **Type:** `object`
+### options
+- **Type:** `Object`
 - **Default:** `{}`
 
 Additional Nunjucks options, see Nunjucks [docs](https://mozilla.github.io/nunjucks/api.html#environment) for more info.

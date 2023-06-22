@@ -1,4 +1,4 @@
-## Liquid
+# Liquid
 _[@vituum/vite-plugin-liquid](https://github.com/vituum/vite-plugin-liquid)_
 
 ```twig
@@ -10,7 +10,7 @@ _[@vituum/vite-plugin-liquid](https://github.com/vituum/vite-plugin-liquid)_
 </ul>
 ```
 
-See [docs](https://liquidjs.com/) for more info about the syntax
+See official [docs](https://liquidjs.com/) for more info about the syntax
 
 ## Install
 **npm**
@@ -24,61 +24,78 @@ yarn add @vituum/vite-plugin-liquid -D
 
 ## Config
 ```javascript
+import vituum from 'vituum'
 import liquid from '@vituum/vite-plugin-liquid'
 
 export default {
-    plugins: [liquid()]
+    plugins: [vituum(), liquid()]
 }
 ```
 
 ## Options
 
 ### reload
-- **Type:** `boolean` or `function`
+- **Type:** `boolean` or `Function`
 - **Default:** `true`
 
-Whenever to auto-reload browser window upon `html`, `liquid` or `json` file change. You can provide function to filter upon which file a reload should occur.
+Whenever to auto-reload browser window upon `liquid` or `json` file change. You can also provide function to filter upon which file a reload should occur.
 
 ### root
 - **Type:** `string`
 - **Default:** `null`
 
-Root is inherited from Vite `root` by default. For example, you can change this to `resolve(process.cwd(), 'src/templates')`, then you can use includes with paths defaulting to this directory.
+Root is inherited from Vite `root` by default. But you can change this to path such as `'./src/'` or `'./src/templates'`, then you can use includes with paths defaulting to this directory.
 
 ### filters
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
 Object of named filter functions to use, see LiquidJS [docs](https://liquidjs.com/tutorials/register-filters-tags.html#Register-Filters) for more info.
 
 ### tags
-- **Type:** `function[]`
+- **Type:** `Function[]`
 - **Default:** `[]`
 
 Array of functions that extend LiquidJS with custom tag, see LiquidJS [docs](https://liquidjs.com/tutorials/register-filters-tags.html#Register-Tags) for more info.
 
 ### data
-- **Type:** `string`
+- **Type:** `string | string[]`
 - **Default:** `''`
 
 Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.jsom`.
 
 ### globals
-- **Type:** `object`
+- **Type:** `Object`
 - **Default:** `{}`
 
-Other global data to use. Can be `object` or `function` returning object, or combination of both.
+Other global data to use. Can be `Object` or `function` returning object, or combination of both.
 
-### filetypes
-- **Type:** `object`
+### ignoredPaths
+- **Type:** `string[]`
+- **Default:** `[]`
 
-Which type of ext-names should be processed by the plugin.
+Which paths should be ignored from processing as LiquidJS.
 
-For example, this is by default in **Vituum**.
+### formats
+- **Type:** `string[]`
+- **Default:** `['liquid', 'json.liquid', 'json']`
 
-```javascript
-{
-    html: config.templates.format === 'liquid' ? /.(json|json.html|liquid.json|liquid.json.html|liquid|liquid.html)$/ : /.(liquid.json|liquid.json.html|liquid|liquid.html)$/,
-    json: /.(json.liquid|json.liquid.html)$/
-}
-```
+Which ext-names should be processed by the plugin.
+
+### options.liquidOptions
+- **Type:** `Object`
+- **Default:** `{}`
+
+Additional LiquidJS options, see LiquidJS [docs](https://liquidjs.com/api/interfaces/LiquidOptions.html) for more info.
+
+### options.renderOptions
+- **Type:** `Object`
+- **Default:** `{}`
+
+Additional render options, see LiquidJS [docs](https://liquidjs.com/) for more info.
+
+### options.renderFileOptions
+- **Type:** `Object`
+- **Default:** `{}`
+
+Additional renderFile options, see LiquidJS [docs](https://liquidjs.com/) for more info.
