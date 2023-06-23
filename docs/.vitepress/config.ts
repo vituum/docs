@@ -47,8 +47,8 @@ export default defineConfig({
 
     nav: [
       { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
-      { text: 'Plugins', link: '/plugins/', activeMatch: '/plugins/' },
       { text: 'Config', link: '/config/', activeMatch: '/config/' },
+      { text: 'Plugins', link: '/plugins/', activeMatch: '/plugins/' },
       {
         text: 'Resources',
         items: [
