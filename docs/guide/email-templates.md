@@ -1,6 +1,6 @@
 # Email Templates
 
-To start writing email templates in Vite, you should start by adding following plugins in your `vite.config.js`, for templates in this example we use [PostHTML](/plugins/posthtml), but you can use any [Template Engine](/guide/template-engines) you want.
+To write email templates in Vite, you should start by adding following plugins in your `vite.config.js`, for templates in this example we use [PostHTML](/plugins/posthtml), but you can use any [Template Engine](/guide/template-engines) you want.
 
 ```javascript
 import vituum from 'vituum'
@@ -64,11 +64,13 @@ And your `layout.html` should look like this.
 
 ```
 
-Now since we're using [@vituum/vite-plugin-postcss](/plugins/postcss), we can use modern syntax in `/src/emails/main.css`. You can even add TailwindCSS here. 
+Now since we're using [@vituum/vite-plugin-postcss](/plugins/postcss), we can use modern syntax in `/src/emails/main.css`. You can even switch this with [@vituum/vite-plugin-tailwindcss](/plugins/tailwindcss) and use TailwindCSS classes. 
 
 All CSS will be inlined into `html` via `Juice`. You can write your emails much easier, use modern syntax, split your email into components etc. 
 
-Lastly, if you want to test your email, add an `.env` file to your project with env variables for [@vituum/vite-plugin-send](/plugins/send). After that you can add `?send` in your browser URL and test email will be sent to you. We also recommend upload your images somewhere, so they can be loaded in your email.
+Lastly, if you want to test your email, add an `.env` file to your project with env variables for [@vituum/vite-plugin-send](/plugins/send), or add them via config. 
+
+After that you can add `?send` in your browser URL and test email will be sent to you. We also recommend upload your images somewhere, so they can be loaded in your email.
 
 
 Find full example of using Vituum with Juice on [Trying Vituum Online](/guide/#trying-vituum-online).
