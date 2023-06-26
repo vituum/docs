@@ -19,6 +19,20 @@ Default paths for `build.rollupOptions.input` are following, so if you want to c
 ]
 ```
 
+## formats
+
+- **Type:** `string[]`
+- **Default:** `'./src'`
+
+Determines which extname formats are supported inside `build.rollupOptions.input` and renamed to `.html`.
+
+## normalizeBasePath
+
+- **Type:** `boolean`
+- **Default:** `false`
+
+Renames and normalizes paths in output `.html` files. It's a workaround if vite `base` is set to `'./'` - [#12](https://github.com/vituum/vituum/issues/12)
+
 ## pages
 
 See [Pages Plugin](/plugins/pages) for more info about options.
