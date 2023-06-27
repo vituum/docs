@@ -2,12 +2,12 @@
 layout: home
 
 title: Vituum
-titleTemplate: Fast prototyping with template engines and integrated frontend tools
+titleTemplate: Fast prototyping with template engines in Vite
 
 hero:
   name: Vituum
-  text: Is Vite with predefined config and integrations
-  tagline: Fast prototyping with template engines and integrated frontend tools
+  text: Fast Prototyping with Template Engines in Vite
+  tagline: Small and fast static site generator for Vite
   image:
     src: /logo.svg
     alt: Vituum
@@ -24,21 +24,15 @@ hero:
 
 features:
   - icon: ⚡️
-    title: Vite integrated
-    details: Blazing fast and next generation frontend tooling. Vituum is a wrapper around Vite.
+    title: Vite Plugins
+    details: Blazing fast. Next generation frontend tooling. Vituum adds various handy plugins for Vite.
   - icon: 🚀️️
-    title: Fast prototyping
-    details: Vituum has multi-page support, so you can prototype fast with various templates.
-  - icon: 🛠️
-    title: Integrated tools and plugins
-    details: All modern frontend features cooked-in on top of Vite, out of the box and ready to go.
+    title: Fast Prototyping
+    details: Vituum has multi-page support, so you can prototype fast with various template engines.
   - icon: 💡
-    title: Template engines
+    title: Template Engines
     details: They are great for preparing website templates fast for various backend integrations.
-  - icon: 📦
-    title: Modular structure
-    details: Pre-defined optional structure for your project files.
   - icon: ✉️ 
-    title: Email templates
+    title: Email Templates
     details: Writing email templates was always tricky. Vituum tries to make it easier for you.
 ---

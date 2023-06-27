@@ -4,54 +4,35 @@ title: Configuring Vite
 
 # Configuring Vituum
 
-Each **Vituum** project needs to have config via `vite.config.js` inside project root.<br>
-You can also use `.mjs`, `.ts` ext-name, this is same as [Vite config](https://vitejs.dev/config/). 
+**Vituum** needs to be added as a plugin in `vite.config.js` inside a project root.<br>
+You can also use `.mjs`, `.ts`, learn more about [Vite config](https://vitejs.dev/config/). 
 
 The most basic config file looks like this:
 
 ```js
-import { defineConfig } from 'vituum'
+import vituum from 'vituum'
 
-export default defineConfig({
-    // your config goes here
-})
-```
-
-**Vituum** is a small wrapper around **Vite**, uses own options and overrides some settings by default and adds additional plugins. See [Main Options](/config/main-options) for more info about **Vituum** options. <br><br>
-These are the main changes which **Vituum** overrides by default in **Vite** config:
-
-```javascript
-server: {
-    host: true,
-    fsServe: {
-        strict: false
-    },
-    open: vituum.server.open
-},
-plugins: vituum.plugins,
-resolve: {
-    alias: {
-        '/src': vituum.root
-    }
-},
-root: vituum.root,
-publicDir: vituum.output,
-css: {
-    postcss: vituum.postcss
-},
-build: {
-    manifest: vituum.build.manifest,
-    outDir: vituum.output, 
-    emptyOutDir: false,
-    polyfillModulePreload: false,
-    rollupOptions: {
-        input: FastGlob.sync(vituum.input).map(entry => resolve(process.cwd(), entry))
-    }
+export default {
+    plugins: [vituum()]
 }
 ```
 
-## Vite
+This adds basic [features](/guide/features) like multi-page support and imports. To add more features, you will need to define additional [plugins](/plugins/).
 
-Any additional vite options can be added via `vite` option, and you can further adjust the settings which Vituum changes by default
+Here is an example of usage with **LiquidJS** and **TailwindCSS**
 
-See [Vite config](https://vitejs.dev/config/) for more details.
+```js
+import vituum from 'vituum'
+import liquid from '@vituum/vite-plugin-liquid'
+import tailwindcss from '@vituum/vite-plugin-tailwindcss'
+
+export default {
+    plugins: [
+        vituum(),
+        liquid(),
+        tailwindcss()
+    ]
+}
+```
+
+You can also choose to not use Vituum and only use its plugins, that's ok too if you don't need multi-page support and other core features.

@@ -7,7 +7,7 @@ const ogUrl = 'https://vituum.dev'
 
 export default defineConfig({
   title: `Vituum`,
-  description: 'Fast prototyping with template engines and integrated frontend tools',
+  description: ogDescription,
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
@@ -20,10 +20,6 @@ export default defineConfig({
     ['meta', { name: 'twitter:site', content: '@newlogicdigital' }],
     ['meta', { name: 'theme-color', content: '#2d55ff' }]
   ],
-
-  vue: {
-    reactivityTransform: true
-  },
 
   themeConfig: {
     logo: '/logo.svg',
@@ -46,12 +42,13 @@ export default defineConfig({
 
     footer: {
       message: `Released under the MIT License.`,
-      copyright: 'Copyright © 2022-present lubomirblazek.cz, newlogic.cz & Vituum Contributors'
+      copyright: 'Copyright © 2023-present lubomirblazek.cz, newlogic.cz & Vituum Contributors'
     },
 
     nav: [
       { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
       { text: 'Config', link: '/config/', activeMatch: '/config/' },
+      { text: 'Plugins', link: '/plugins/', activeMatch: '/plugins/' },
       {
         text: 'Resources',
         items: [
@@ -85,12 +82,90 @@ export default defineConfig({
               link: '/guide/features'
             },
             {
-              text: 'Template engines',
+              text: 'Template Engines',
               link: '/guide/template-engines'
             },
             {
-              text: 'Integrations',
-              link: '/guide/integrations'
+              text: 'Email Templates',
+              link: '/guide/email-templates'
+            },
+            {
+              text: 'Migrating to 1.0',
+              link: '/guide/migrating-1-0'
+            }
+          ]
+        }
+      ],
+      '/plugins/': [
+        {
+          text: 'Plugins',
+          items: [
+            {
+              text: 'Internal',
+              items: [
+                {
+                  text: 'Pages',
+                  link: '/plugins/pages'
+                },
+                {
+                  text: 'Imports',
+                  link: '/plugins/imports'
+                }
+              ]
+            },
+            {
+              text: 'Common',
+              items: [
+                {
+                  text: 'TailwindCSS',
+                  link: '/plugins/tailwindcss'
+                },
+                {
+                  text: 'PostCSS',
+                  link: '/plugins/postcss'
+                },
+                {
+                  text: 'PostHTML',
+                  link: '/plugins/posthtml'
+                },
+                {
+                  text: 'Juice',
+                  link: '/plugins/juice'
+                },
+                {
+                  text: 'Send',
+                  link: '/plugins/send'
+                }
+              ]
+            },
+            {
+              text: 'Template Engines',
+              items: [
+                {
+                  text: 'Liquid',
+                  link: '/plugins/liquid'
+                },
+                {
+                  text: 'Twig',
+                  link: '/plugins/twig'
+                },
+                {
+                  text: 'Latte',
+                  link: '/plugins/latte'
+                },
+                {
+                  text: 'Nunjucks',
+                  link: '/plugins/nunjucks'
+                },
+                {
+                  text: 'Pug',
+                  link: '/plugins/pug'
+                },
+                {
+                  text: 'Handlebars',
+                  link: '/plugins/handlebars'
+                }
+              ]
             }
           ]
         }
@@ -106,10 +181,6 @@ export default defineConfig({
             {
               text: 'Main',
               link: '/config/main-options'
-            },
-            {
-              text: 'Integrations',
-              link: '/config/integrations-options'
             }
           ]
         }
