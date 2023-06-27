@@ -24,7 +24,7 @@ Here is an example of usage with **LiquidJS** and **TailwindCSS**
 ```js
 import vituum from 'vituum'
 import liquid from '@vituum/vite-plugin-liquid'
-import tailwind from '@vituum/vite-plugin-tailwindcss'
+import tailwindcss from '@vituum/vite-plugin-tailwindcss'
 
 export default {
     plugins: [
