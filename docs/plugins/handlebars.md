@@ -1,7 +1,6 @@
 # Handlebars
 _[@vituum/vite-plugin-handlebars](https://github.com/vituum/vite-plugin-handlebars)_
 ```handlebars
-```twig
 <ul id="navigation">
     {{#each navigation as |item|}}
         <li>{{ item }}</li>
