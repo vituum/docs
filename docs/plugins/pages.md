@@ -56,3 +56,10 @@ Directory where your `.html` or template engine page files are located. Requests
 - **Default:** `[]`
 
 Determines which paths should be ignored from routing to `pages` directory and should fallback to `pages.root`. This should be url pathname not starting with slash.
+
+## normalizeBasePath
+
+- **Type:** `boolean`
+- **Default:** `false`
+
+Renames and normalizes paths in output `.html` files. It's a workaround if vite `base` is set to `'./'` - [#12](https://github.com/vituum/vituum/issues/12)
