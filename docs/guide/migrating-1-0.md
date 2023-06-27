@@ -8,6 +8,7 @@
 * `src/views` directory was changed to `src/pages`, but you can still use views by changing it in the config
 * `vituum` build command was removed in favour of building directly with Vite
 * Integrations were removed, and everything is a Vite plugin now
+* Defining template with `<script type="application/json">` was removed in favour of defining templates with files (`.liquid`, `.pug`, `.json` etc.)
 
 Here is an example of upgrading the Vituum config from `0.0.X` to `1.0`
 
