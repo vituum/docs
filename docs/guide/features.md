@@ -40,7 +40,7 @@ Example of the structure:
 ## Template Engines
 Today frontend tools are awesome, but the good old template engines don't get enough love anymore.
 
-Vituum tries to change that with support for template engines in Vite.<br>Let's go Vite with the templates!
+Vituum tries to change this by supporting template engines in Vite.<br>Let's go _Vite_ with the templates!
 
 **Twig**, **Liquid**, **Pug**, **Nunjucks**, **Handlebars**, **Latte** - there are a bunch of them!
 

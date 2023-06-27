@@ -16,7 +16,7 @@ Here is an example of how to use **Liquid** as a template engine inside the page
 * `*.json.liquid` - for non-html data such as json. `liquid` is input and `json` is output (as a `.json` file) - you can use this if you have custom tag or function that transforms `html` into `json`
 * `*.json` - for defining a page only with data, template is auto-loaded from the `template` property inside the file, or from plugin config, or from **📁 data** directory inside a `.json` file (and you can add other shared data for all your templates here)
 
-Same goes for any other template engine, just change the `.liquid` to something else. You can even use more template engines at the same time.<br>
+The same goes for any other template engine, just change the `.liquid` to something else. You can even use more template engines at the same time.<br>
 
 Only one template engine can be used as `*.json` at the same time though. If you have more than one template engine, you need to add `format` property into `*.json` so plugins can tell which template engine should be rendered, otherwise it's the first defined plugin.
 <br><br>

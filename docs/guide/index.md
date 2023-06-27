@@ -3,7 +3,7 @@
 ## Overview
 
 Vituum is a mix of words **Vite** _(French word for "quick")_ and **Tuum** _<br>(Estonian word for "core")_<br><br>
-It's a set of plugins for **Vite**, full list can be found on [Plugins page](/plugins/).
+It's a set of plugins for **Vite**, the full list can be found on [Plugins page](/plugins/).
 
 ## Get started
 Already using preview version of Vituum 0.0.x? [Learn more](/guide/migrating-1-0) how to migrate to 1.0.
