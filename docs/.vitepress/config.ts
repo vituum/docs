@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
-const ogDescription = 'Fast prototyping with template engines and integrated frontend tools'
-const ogImage = 'https://vituum.dev/og-image.png'
+const ogDescription = 'Fast prototyping with template engines in Vite'
+const ogImage = 'https://vituum.dev/og-image.png?v1'
 const ogTitle = 'Vituum'
 const ogUrl = 'https://vituum.dev'
 
