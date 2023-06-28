@@ -135,6 +135,10 @@ export default defineConfig({
                 {
                   text: 'Send',
                   link: '/plugins/send'
+                },
+                {
+                  text: 'Concat',
+                  link: '/plugins/concat'
                 }
               ]
             },
