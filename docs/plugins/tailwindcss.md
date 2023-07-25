@@ -1,5 +1,5 @@
 # TailwindCSS
-_[@vituum/vite-plugin-tailwind](https://www.npmjs.com/package/@vituum/vite-plugin-tailwind)_
+_[@vituum/vite-plugin-tailwindcss](https://www.npmjs.com/package/@vituum/vite-plugin-tailwindcss)_
 
 Adds out of the box support for **TailwindCSS** to your project. Including base **PostCSS** plugins from [@vituum/vite-plugin-postcss](/plugins/postcss)
 
@@ -8,11 +8,11 @@ See [docs](https://tailwindcss.com/docs) for more info about **TailwindCSS**
 ## Install
 **npm**
 ```bash
-npm i @vituum/vite-plugin-tailwind --save-dev
+npm i @vituum/vite-plugin-tailwindcss --save-dev
 ```
 **yarn**
 ```bash
-yarn add @vituum/vite-plugin-tailwind -D
+yarn add @vituum/vite-plugin-tailwindcss -D
 ```
 
 ## Config
