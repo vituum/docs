@@ -3,6 +3,7 @@
  * -------------------------------------------------------------------------- */
 
 :root {
+  --vp-c-brand-1: var(--vp-c-brand);
   --vp-c-brand: #038aff;
   --vp-c-brand-light: #36a1ff;
   --vp-c-brand-lighter: #36a1ff;
