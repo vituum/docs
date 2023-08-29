@@ -18,7 +18,12 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: ogDescription }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@newlogicdigital' }],
-    ['meta', { name: 'theme-color', content: '#2d55ff' }]
+    ['meta', { name: 'theme-color', content: '#2d55ff' }],
+    ['script', {
+      defer: '',
+      src: 'https://plausible.newlogic.cz/js/script.outbound-links.js',
+      'data-domain': 'vituum.dev'
+    }]
   ],
 
   themeConfig: {
