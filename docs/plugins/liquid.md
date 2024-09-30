@@ -62,7 +62,7 @@ Array of functions that extend LiquidJS with custom tag, see LiquidJS [docs](htt
 - **Type:** `string | string[]`
 - **Default:** `''`
 
-Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.jsom`.
+Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.json`.
 
 ### globals
 - **Type:** `Object`

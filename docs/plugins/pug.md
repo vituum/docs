@@ -53,7 +53,7 @@ Object of named filter functions to use, see Pug [docs](https://pugjs.org/langua
 - **Type:** `string`
 - **Default:** `['src/data/**/*.json']`
 
-Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.jsom`.
+Path to additional data provided with json file. Can be a file, or a glob like this `/path/to/*.json`.
 
 ### globals
 - **Type:** `Object`
