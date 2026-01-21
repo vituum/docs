@@ -6,7 +6,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
-    "vitepress": "^1.0.0-rc.26",
-    "vue": "^3.3.8"
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.27"
   }
 }

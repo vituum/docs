@@ -1,9 +1,11 @@
 # TailwindCSS
 _[@vituum/vite-plugin-tailwindcss](https://www.npmjs.com/package/@vituum/vite-plugin-tailwindcss)_
 
-Adds out of the box support for **TailwindCSS** to your project. Including base **PostCSS** plugins from [@vituum/vite-plugin-postcss](/plugins/postcss)
+Adds out-of-the-box support for the old **TailwindCSS v3** to your project. Including base **PostCSS** plugins from [@vituum/vite-plugin-postcss](/plugins/postcss)
 
-See [docs](https://tailwindcss.com/docs) for more info about **TailwindCSS**
+See [docs](https://v3.tailwindcss.com/docs) for more info about **TailwindCSS**
+
+> Use the official [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite) if you want to use latest **TailwindCSS** version
 
 ## Install
 **npm**

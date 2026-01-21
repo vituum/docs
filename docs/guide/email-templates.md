@@ -6,7 +6,7 @@ To write email templates in Vite, you should start by adding following plugins i
 import vituum from 'vituum'
 import postcss from '@vituum/vite-plugin-postcss'
 import posthtml from '@vituum/vite-plugin-posthtml'
-import juice from '@vituum/vite-plugin-juice'
+import juice from '@vituum/vite-plugin-css-inline'
 import send from '@vituum/vite-plugin-send'
 
 export default {
@@ -16,7 +16,7 @@ export default {
         posthtml({
             root: './src/emails'
         }),
-        juice(),
+        cssInline(),
         send()
     ]
 }
@@ -64,9 +64,9 @@ And your `layout.html` should look like this.
 
 ```
 
-Now since we're using [@vituum/vite-plugin-postcss](/plugins/postcss), we can use modern syntax in `/src/emails/main.css`. You can even switch this with [@vituum/vite-plugin-tailwindcss](/plugins/tailwindcss) and use TailwindCSS classes. 
+Now, since we're using [@vituum/vite-plugin-postcss](/plugins/postcss) (you can also use [lightningcss](https://vite.dev/config/shared-options#css-lightningcss)), we can use modern syntax in `/src/emails/main.css`. You can even switch this with [@vituum/vite-plugin-tailwindcss](/plugins/tailwindcss) or [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite) and use TailwindCSS classes. 
 
-All CSS will be inlined into `html` via `Juice`. You can write your emails much more easier, use modern syntax, split your email into components etc. 
+All CSS will be inlined into `html` via `css-inline`. You can write your emails much more easier, use modern syntax, split your email into components etc. 
 
 Lastly, if you want to test your email, add an `.env` file to your project with env variables for [@vituum/vite-plugin-send](/plugins/send), or add them via config. 
 
