@@ -61,3 +61,9 @@ Additional PostHTML plugins to use. See PostHTML [GitHub](https://github.com/pos
 - **Default:** `{}`
 
 Additional PostHTML options to use. See PostHTML [options](https://posthtml.org/#/core?id=posthtml-options) for more info.
+
+### enforce
+- **Type:** `'pre' | 'post'`
+- **Default:** `pre`
+
+Enforce the plugin to run before or after other plugins.

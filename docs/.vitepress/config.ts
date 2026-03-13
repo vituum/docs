@@ -138,6 +138,10 @@ export default defineConfig({
                   link: '/plugins/juice'
                 },
                 {
+                  text: 'CSS Inline',
+                  link: '/plugins/css-inline'
+                },
+                {
                   text: 'Send',
                   link: '/plugins/send'
                 },

@@ -67,6 +67,12 @@ Path to additional data provided with json file. Can be a file, or a glob like t
 - **Type:** `Object`
 - **Default:** `{}`
 
+Other global data to use. Can be `Object` or `function` returning object, or combination of both. Uses the [addGlobal](https://mozilla.github.io/nunjucks/api.html#addglobal) method of Nunjucks.
+
+### context
+- **Type:** `Object`
+- **Default:** `{}`
+
 Other global data to use. Can be `Object` or `function` returning object, or combination of both.
 
 ### ignoredPaths

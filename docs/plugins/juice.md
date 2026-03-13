@@ -6,7 +6,7 @@ It's handy for creating email templates. Learn more about that [here](/guide/fea
 
 See library [docs](https://github.com/Automattic/juice) for more info about **Juice**.
 
-Only PostCSS and CSS is supported, see `juiceLink` option to see how to add support for `less` or `sass`.
+> Juice is dependency heavy and slow, consider using [css-inline](/plugins/css-inline) instead as a faster alternative.
 
 ## Install
 **npm**
@@ -50,15 +50,19 @@ Whenever to add default attributes `border="0" cellpadding="0" cellspacing="0"` 
 
 Default doctype to use, replaces `<!DOCTYPE html>` from your `.html` with your doctype to use in emails.
 
-### juiceLink
+### postcss.processOptions
 
-- **Type:** `function`
-- **Default:** `async href => href`
+- **Type:** `ProcessOptions`
+- **Default:** `undefined`
 
-Only PostCSS and CSS is supported. You can transform `sass` or `less` via this function, to process them manually.
+See all options [here](https://postcss.org/api/#processor-process)
 
-* Sass - https://sass-lang.com/documentation/js-api/
-* Less - https://lesscss.org/usage/#programmatic-usage
+### postcss.plugins
+
+- **Type:** `ProcessOptions`
+- **Default:** `undefined`
+
+Here you can add additional [PostCSS plugins](https://github.com/postcss/postcss-load-config/blob/main/README.md#array).
 
 ### options
 
