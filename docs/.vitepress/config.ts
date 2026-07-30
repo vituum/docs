@@ -39,10 +39,13 @@ export default defineConfig({
       { icon: 'twitter', link: 'https://twitter.com/vituum_dev' }
     ],
 
-    algolia: {
-      appId: 'VB79JXJIAA',
-      apiKey: 'a7c609cdca4e22d1249ab92a68d1d5ed',
-      indexName: 'vituum'
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: 'VB79JXJIAA',
+        apiKey: 'a7c609cdca4e22d1249ab92a68d1d5ed',
+        indexName: 'vituum'
+      },
     },
 
     footer: {
