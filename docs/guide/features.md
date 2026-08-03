@@ -25,6 +25,25 @@ export default {
 
 You can use this to prototype fast without the need to change much in the config.<br>By default, Vituum routes from `src/pages` directory.
 
+For change the default Vituum routes need change it in [rollupOptions.input](https://vitejs.dev/guide/build.html#multi-page-app) and in the [dir](https://vituum.dev/plugins/pages.html#dir) option.
+
+```javascript
+export default {
+    build: {
+        rollupOptions: {
+            input: ['./src/templates/pages/**/*.html']
+        }
+    },
+    plugins: [
+        vituum({
+            pages: {
+                dir: './src/templates/pages'
+            }
+        })
+    ]
+}
+```
+
 You can even enhance this with [PostHTML](/plugins/posthtml) syntax like `<include>` to include small `html` components or use [Template Engines](/guide/template-engines) for full templating experience.
 
 Example of the structure:
