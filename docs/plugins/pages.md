@@ -34,6 +34,25 @@ export default {
 }
 ```
 
+Pages plugin itself doesn't support globs inside [rollupOptions.input](https://vitejs.dev/guide/build.html#multi-page-app), that's Vituum does. For change default Vituum routes from `src/pages` directory use `fast-glob`
+
+```javascript
+import pages from 'vituum/plugins/pages.js'
+import fg from 'fast-glob'
+import { resolve } from 'path'
+
+export default {
+    build: {
+        rollupOptions: {
+            input: fg.sync(['./src/templates/pages/*.html']).map(entry => resolve(process.cwd(), entry))
+        },
+    },
+    plugins: [pages()]
+}
+```
+
+Pages plugin itself does support only `.html` extention, not files such as eg. `.liquid`, `.twig`, `.json`. For use [Template Engines](https://vituum.dev/guide/template-engines.html) plugins use `.liquid.html`, `.twig.html`, `.json.html`.
+
 ## Options
 
 ### root
